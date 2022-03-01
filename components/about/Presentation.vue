@@ -6,24 +6,22 @@
 					class="mt-0 text-4xl font-bold leading-tight font-tinos"
 					data-aos="fade-in"
 				>
-					Je suis David FYON, designer & développeur
+					{{ $t('about.presentation.title') }}
 				</h1>
 				<p
 					class="leading-relaxed text-white text-opacity-50"
 					data-aos="fade-in"
 					data-aos-delay="500"
 				>
-					Créatif, autonome et passionné je suis intéressé par toutes
-					les nouvelles tendances dans les domaines du design, de
-					l’interactivité et de la communication.
+					{{ $t('about.presentation.description') }}
 				</p>
-				<a :href="`${publicPath}cv_davidfyon.pdf`" target="_blank">
+				<a href="../cv_davidfyon.pdf" target="_blank">
 					<button
 						class="px-4 py-2 mt-6 font-medium tracking-wide text-white uppercase transition-colors duration-100 transform bg-gray-600 rounded-md hover:bg-gray-700 focus:outline-none"
 						data-aos="fade-in"
 						data-aos-delay="500"
 					>
-						Télécharger mon CV
+						{{ $t('about.presentation.download') }}
 					</button>
 				</a>
 			</div>
@@ -33,13 +31,13 @@
 				>
 					<div class="flex items-center justify-center animation">
 						<div class="top">
-							<AboutBubble title="Frontend development" />
+							<AboutBubble :title="$t('about.presentation.development')" />
 						</div>
 						<div class="left">
-							<AboutBubble title="User interface design" />
+							<AboutBubble :title="$t('about.presentation.ui')" />
 						</div>
 						<div class="right">
-							<AboutBubble title="User experience design" />
+							<AboutBubble :title="$t('about.presentation.ux')" />
 						</div>
 						<div class="w-4 h-4 bg-purple-600 rounded-full point" />
 					</div>
@@ -55,11 +53,6 @@ import aosMixin from '~/mixins/aos'
 export default {
   name: 'Presentation',
   mixins: [aosMixin],
-	data () {
-		return {
-			publicPath: process.env.BASE_URL
-		}
-	},
 	mounted () {
 		this.loadBubbleAnimation()
 	},

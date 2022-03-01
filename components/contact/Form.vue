@@ -6,16 +6,16 @@
 					class="block mb-2 font-bold tracking-wide"
 					for="first-name"
 				>
-					Prénom<sup>*</sup>
+					{{ $t('contact.form.firstname') }}<sup>*</sup>
 				</label>
 				<input
+          v-model="firstname"
 					:class="{ 'is-danger': fieldErrors.firstname }"
 					class="block w-full px-4 py-3 mb-3 leading-tight bg-gray-800 border border-gray-700 rounded appearance-none focus:outline-none focus:border-gray-500"
 					id="first-name"
 					name="user_firstname"
 					type="text"
 					@focus="resetInput('firstname')"
-					v-model="firstname"
 				/>
 				<p class="text-sm text-red-700" v-if="fieldErrors.firstname">
 					{{ fieldErrors.firstname }}
@@ -26,16 +26,16 @@
 					class="block mb-2 font-bold tracking-wide"
 					for="last-name"
 				>
-					Nom<sup>*</sup>
+					{{ $t('contact.form.lastname') }}<sup>*</sup>
 				</label>
 				<input
+          v-model="lastname"
 					:class="{ 'is-danger': fieldErrors.lastname }"
 					class="block w-full px-4 py-3 mb-3 leading-tight bg-gray-800 border border-gray-700 rounded appearance-none focus:outline-none focus:border-gray-500"
 					id="last-name"
 					name="user_lastname"
 					type="text"
 					@focus="resetInput('lastname')"
-					v-model="lastname"
 				/>
 				<p class="text-sm text-red-700" v-if="fieldErrors.lastname">
 					{{ fieldErrors.lastname }}
@@ -45,16 +45,16 @@
 		<div class="flex flex-wrap mb-6 -mx-3">
 			<div class="w-full px-3 mb-6 md:w-1/2 md:mb-0">
 				<label class="block mb-2 font-bold tracking-wide" for="email">
-					Email<sup>*</sup>
+					{{ $t('contact.form.email') }}<sup>*</sup>
 				</label>
 				<input
+          v-model="email"
 					:class="{ 'is-danger': fieldErrors.email }"
 					class="block w-full px-4 py-3 mb-3 leading-tight bg-gray-800 border border-gray-700 rounded appearance-none focus:outline-none focus:border-gray-500"
 					id="email"
 					name="user_email"
 					type="text"
 					@focus="resetInput('email')"
-					v-model="email"
 				/>
 				<p class="text-sm text-red-700" v-if="fieldErrors.email">
 					{{ fieldErrors.email }}
@@ -62,37 +62,37 @@
 			</div>
 			<div class="w-full px-3 md:w-1/2">
 				<label class="block mb-2 font-bold tracking-wide" for="company">
-					Société
+					{{ $t('contact.form.company') }}
 				</label>
 				<input
+          v-model="company"
 					class="block w-full px-4 py-3 mb-3 leading-tight bg-gray-800 border border-gray-700 rounded appearance-none focus:outline-none focus:border-gray-500"
 					id="company"
 					name="user_company"
 					type="text"
-					v-model="company"
 				/>
 			</div>
 		</div>
 		<div class="flex flex-wrap mb-6 -mx-3">
 			<div class="w-full px-3">
 				<label class="block mb-2 font-bold tracking-wide" for="message">
-					Message<sup>*</sup>
+					{{ $t('contact.form.message') }}<sup>*</sup>
 				</label>
 				<textarea
+          v-model="message"
 					rows="5"
 					:class="{ 'is-danger': fieldErrors.message }"
 					class="block w-full px-4 py-3 mb-3 leading-tight transition-colors duration-100 ease-in-out bg-gray-800 border border-gray-700 rounded appearance-none focus:outline-none focus:border-gray-500"
 					id="message"
 					name="user_message"
 					@focus="resetInput('message')"
-					v-model="message"
 				/>
 				<p class="text-sm text-red-700" v-if="fieldErrors.message">
 					{{ fieldErrors.message }}
 				</p>
 			</div>
 		</div>
-		<p class="text-xs italic text-gray-600">* Champs obligatoires</p>
+		<p class="text-xs italic text-gray-600">* {{ $t('contact.form.required_fields') }}</p>
 		<div class="flex items-center justify-center">
 			<button
 				:disabled="sending"
@@ -122,17 +122,20 @@
 						></path>
 					</svg>
 				</span>
-				<span>Envoyer</span>
+				<span>
+          {{ $t('contact.form.send') }}
+        </span>
 			</button>
 		</div>
 	</form>
 </template>
 
 <script>
-import ContactServices from "@/services/contact.services";
-import { init } from "emailjs-com";
-import emailjs from "emailjs-com";
-init("user_ys4GpmHCyFQhA7jdK91d6");
+import ContactServices from "@/services/contact.services"
+import emailjs from "emailjs-com"
+import { init } from "emailjs-com"
+
+init(process.env.NUXT_ENV_EMAILJS_USER)
 
 export default {
 	data () {
@@ -150,7 +153,6 @@ export default {
 	methods: {
 		send () {
 			if (!this.validate()) return false
-
 			this.isLoading = true
 			this.sendEmail()
 		},
@@ -161,42 +163,45 @@ export default {
 			if (this.firstname === null || this.firstname.trim().length < 1) {
 				this.errors.push({
 					param: "firstname"
-				});
-				this.fieldErrors.firstname = "Nom obligatoire"
+				})
+				this.fieldErrors.firstname = this.$t('contact.form.firstname') + ' ' + this.$t('contact.form.required')
 			}
 
 			if (this.lastname === null || this.lastname.trim().length < 1) {
 				this.errors.push({
 					param: "lastname"
 				})
-				this.fieldErrors.lastname = "Prénom obligatoire"
+				this.fieldErrors.lastname = this.$t('contact.form.lastname') + ' ' + this.$t('contact.form.required')
 			}
 
 			if (this.email === null || this.email.trim().length < 1) {
 				this.errors.push({
 					param: "email"
 				})
-				this.fieldErrors.email = "Email obligatoire"
+				this.fieldErrors.email = this.$t('contact.form.email') + ' ' + this.$t('contact.form.required')
 			}
 
 			if (this.email && !ContactServices.isEmailValid(this.email)) {
 				this.errors.push({
 					param: "email"
 				})
-				this.fieldErrors.email = "Email invalide"
+				this.fieldErrors.email = this.$t('contact.form.email') + ' ' + this.$t('contact.form.invalid')
 			}
 
 			if (this.message === null || this.message.trim().length < 1) {
 				this.errors.push({
 					param: "message"
 				})
-				this.fieldErrors.message = "Message obligatoire"
+				this.fieldErrors.message = this.$t('contact.form.message') + ' ' + this.$t('contact.form.required')
 			}
 
 			if (this.errors.length > 0) {
 				this.$toasted.error(
-					"Merci de remplir les champs obligatoires."
-				)
+          this.$t('contact.form.add_required_fields'), {
+            duration: 5000,
+            position: "top-center"
+          }
+        )
 				return false
 			} else {
 				this.sending = true
@@ -205,22 +210,28 @@ export default {
 		},
 		sendEmail () {
 			emailjs
-				.sendForm("service_956b2u8", "template_u2xvkg9", "#contactform")
+				.sendForm(process.env.NUXT_ENV_EMAILJS_SERVICE, process.env.NUXT_ENV_EMAILJS_TEMPLATE_INFOS, "#contactform")
 				.then(
-					result => {
-						this.sending = false;
+					(result) => {
+						this.sending = false
 						this.$toasted.success(
-							"Votre message a bien été envoyé."
-						)
+              this.$t('contact.form.success'), {
+                duration: 5000,
+                position: "top-center"
+              }
+            )
 						this.resetForm()
 						console.log("SUCCESS!", result.status, result.text)
 					},
-					error => {
+					(error) => {
 						this.sending = false
 						this.$toasted.info(
-							"Il y a eu un soucis lors de l'envoi du message, merci de me contacter par email."
-						);
-						this.resetForm();
+              this.$t('contact.form.error'), {
+                duration: 5000,
+                position: "top-center"
+              }
+            )
+						this.resetForm()
 						console.log("FAILED...", error)
 					}
 				)

@@ -1,15 +1,13 @@
 <template>
   <div class="container mx-auto xl:max-w-screen-xl">
-    <h1 class="pt-6 font-bold font-tinos">Contact</h1>
+    <h1 class="pt-6 font-bold font-tinos">
+      {{ $t('contact.title') }}
+    </h1>
     <div class="flex flex-wrap mb-4">
       <div
         class="w-full mt-4 mb-4 border-none lg:mt-0 lg:mb-0 lg:pr-10 lg:border-r-2 lg:border-white lg:border-opacity-25 lg:border-solid lg:w-2/3"
       >
-        <span class="text-white text-opacity-50">
-          Pour toutes <b>questions</b>, <b>suggestions</b> ou
-          <b>remarques</b> n’hésitez pas à me contacter en
-          remplissant le formulaire ci-dessous :
-        </span>
+        <span class="text-white text-opacity-50" v-html="$t('contact.description')" />
         <ContactForm class="mt-6" />
       </div>
       <div class="w-full mt-10 lg:pl-10 lg:mt-0 lg:w-1/3">
@@ -96,8 +94,17 @@
 <script>
 export default {
 	name: "Contact",
-	metaInfo: {
-		title: "Contact"
-	}
+	head () {
+    return {
+      title: this.$t('meta.contact.title'),
+      meta: [
+        {
+          hid: 'contact',
+          name: 'contact',
+          content: this.$t('meta.contact.description')
+        }
+      ]
+    }
+  }
 }
 </script>

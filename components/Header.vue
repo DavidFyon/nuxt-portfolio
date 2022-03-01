@@ -55,7 +55,7 @@
 					:class="{ active: isActive }"
 					to="/"
 				>
-					A propos
+					{{ $t('about.title') }}
 					<span
 						class="block w-0 my-1 transition-all duration-200 ease-in-out border-b-2 border-purple-600 rounded-full group-hover:w-full"
 					/>
@@ -64,7 +64,7 @@
 					class="block py-1 mx-0 mt-0 font-normal text-white menu group sm:ml-2 sm:mt-1 focus:outline-none sm:mx-6"
 					to="/portfolio"
 				>
-					Portfolio
+					{{ $t('portfolio.title') }}
 					<span
 						class="block w-0 my-1 transition-all duration-200 ease-in-out border-b-2 border-purple-600 rounded-full group-hover:w-full"
 					/>
@@ -73,7 +73,7 @@
 					class="block py-1 mx-0 mt-0 font-normal text-white menu group sm:ml-2 sm:mt-1 focus:outline-none sm:mx-6"
 					to="/blog"
 				>
-					Blog
+					{{ $t('blog.title') }}
 					<span
 						class="block w-0 my-1 transition-all duration-200 ease-in-out border-b-2 border-purple-600 rounded-full group-hover:w-full"
 					/>
@@ -84,7 +84,7 @@
 					<button
 						class="px-4 py-2 font-medium tracking-wide text-white uppercase transition-colors duration-100 transform bg-purple-600 rounded-md hover:bg-purple-700 focus:outline-none"
 					>
-						Contact
+						{{ $t('contact.title') }}
 					</button>
 				</nuxt-link>
 				<!-- <locale-switcher /> -->

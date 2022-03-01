@@ -4,7 +4,7 @@
       class="container flex flex-col justify-center mx-auto sm:flex-row xl:max-w-screen-xl sm:items-center sm:justify-between"
     >
       <div class="mt-2 mb-2 text-sm text-center text-white text-opacity-50 sm:text-left">
-        © {{ date }} Design &amp; Code by David FYON
+        © {{ date }} {{ $t('copyright') }}
       </div>
       <div class="flex items-center justify-center mt-2 mb-2 sm:justify-start">
         <a href="https://twitter.com/DavidFyon" target="_blank">

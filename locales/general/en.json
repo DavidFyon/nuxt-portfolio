@@ -6,13 +6,37 @@
     "title": "Portfolio"
   },
   "about": {
-    "title": "About"
+    "title": "About",
+    "presentation": {
+      "title": "Je suis David FYON, designer & développeur front-end",
+      "description": "Créatif, autonome et passionné je suis intéressé par toutes les nouvelles tendances dans les domaines du design, de l’interactivité et de la communication.",
+      "download": "Download my CV",
+      "development": "Frontend development",
+      "ui": "User interface design",
+      "ux": "User experience design"
+    }
   },
   "blog": {
     "title": "Blog",
     "soon": "Soon..."
   },
   "contact": {
-    "title": "Contact"
-  }
+    "title": "Contact",
+    "description": "If you have any <b>questions</b>, <b>suggestions</b> or <b>remarks</b>, please do not hesitate to contact me by filling in the form below:",
+    "form": {
+      "firstname": "First name",
+      "lastname": "Last name",
+      "email": "Email",
+      "company": "Company",
+      "message": "Message",
+      "send": "Send",
+      "required": "required",
+      "invalid": "invalid",
+      "required_fields": "Required fields",
+      "add_required_fields": "Please fill in the required fields.",
+      "success": "Your message has been sent.",
+      "error": "There was a problem sending the message, please contact me by email."
+    }
+  },
+  "copyright": "Design & Code by David FYON"
 }
