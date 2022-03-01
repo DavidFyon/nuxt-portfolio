@@ -10,7 +10,7 @@
           <b>remarques</b> n’hésitez pas à me contacter en
           remplissant le formulaire ci-dessous :
         </span>
-        <FormContact class="mt-6" />
+        <ContactForm class="mt-6" />
       </div>
       <div class="w-full mt-10 lg:pl-10 lg:mt-0 lg:w-1/3">
         <div class="text-white">
@@ -85,7 +85,7 @@
             </span>
           </div>
           <div class="flex mt-10 mb-4">
-            <Map />
+            <ContactMap />
           </div>
         </div>
       </div>

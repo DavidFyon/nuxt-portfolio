@@ -1,6 +1,7 @@
 <template>
-  <div class="container mx-auto xl:max-w-screen-xl">
-    Test
+  <div>
+    <!-- INTRO -->
+		<AboutPresentation />
   </div>
 </template>
 

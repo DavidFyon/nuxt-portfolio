@@ -13,19 +13,20 @@ export default {
     ],
     link: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Tinos&family=Inter:wght@400;500;600;700;800;900&display=fallback' },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Tinos&family=Inter:wght@400;500;600;700;800;900&display=fallback",
+      },
     ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-    '~assets/scss/main.scss'
-  ],
+  css: ["~assets/scss/main.scss"],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    '~/plugins/scroll.js',
-    '~/plugins/event-bus.js'
+    "~/plugins/scroll.js",
+    "~/plugins/event-bus.js",
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -34,7 +35,8 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
-    "@nuxtjs/tailwindcss"
+    "@nuxtjs/tailwindcss",
+    "nuxt-animejs",
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -65,8 +67,8 @@ export default {
       "/": {
         fr: "/",
         en: "/en",
-      }
-    }
+      },
+    },
   },
   env: {
     baseUrl: process.env.NUXT_ENV_BASE_URL || "http://localhost:3000",
@@ -74,4 +76,4 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
-}
+};
