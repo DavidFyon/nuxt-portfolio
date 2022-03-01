@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import "partials/globals";
+@import "partials/fonts";
+@import "partials/links";
+@import "partials/buttons";
+@import "partials/elements";
+@import "partials/navigation";
+@import "partials/forms";
+@import "partials/tooltip";
+@import "partials/toasted";
+@import "partials/animations";
+@import "partials/transitions";

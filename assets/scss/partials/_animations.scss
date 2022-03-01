@@ -1,0 +1,46 @@
+.fade-enter-active {
+	transition: opacity 0.2s;
+}
+
+.fade-enter {
+	opacity: 0;
+}
+
+.animation {
+	position: absolute;
+	top: -48px;
+	z-index: -1;
+	.top, .left, .right, .point {
+		position: absolute;
+		top: 0;
+	}
+	.point {
+		top: 11.1rem;
+	}
+	.left {
+		top: 8.5rem;
+		margin-left: -10rem;
+	}
+	.right {
+		top: 8.5rem;
+		margin-left: 10rem;
+	}
+	.bubble {
+		background: linear-gradient(-45deg, #B5B5FF, #5D5DFF, #a5a5a5, #797878);
+		background-size: 400% 400%;
+		animation: gradient 15s ease infinite;
+		opacity: 0.1;
+	}
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

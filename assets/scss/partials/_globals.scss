@@ -1,0 +1,30 @@
+@layer base {
+	body {
+		@apply bg-dark text-white antialiased;
+	}
+	canvas {
+		outline:none !important;
+		border:none !important;
+	}
+
+	header {
+		@apply bg-dark bg-opacity-80 bg-clip-padding;
+		backdrop-filter: blur(10px);
+	}
+
+	footer {
+		@apply bg-dark;
+	}
+
+	h1 {
+		@apply text-3xl mt-4 mb-8;
+	}
+
+	h2 {
+		@apply text-3xl mb-4;
+	}
+
+	h3 {
+		@apply text-lg mb-4;
+	}
+}

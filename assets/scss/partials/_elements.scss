@@ -1,0 +1,51 @@
+@layer base {
+	.h-line {
+		height: 1px;
+		width: 100%;
+	}
+	.v-line {
+		width: 1px;
+		height: 100%;
+	}
+
+	.v-lazy-image {
+		opacity: 0;
+		transition: opacity .5s;
+	}
+	.v-lazy-image-loaded {
+		opacity: 1;
+	}
+
+	.gradiant {
+		background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+	}
+
+	.scrolltop {
+		backdrop-filter: blur(10px);
+	}
+
+	.isoDefault {
+		min-height: 210px;
+		margin: 0.5em -0.5em;
+		z-index: 0;
+		.item {
+			padding: 1.2em;
+			margin: 0.5em;
+			min-width: 200px;
+			height: 250px;
+			width: calc(33.3% - 1em);
+			/* lg */
+			@media (max-width: 1024px) {
+				width: calc(50% - 1em);
+			}
+			/* md */
+			@media (max-width: 768px) {
+				width: calc(50% - 1em);
+			}
+			/* sm */
+			@media (max-width: 640px) {
+				width: calc(100% - 1em);
+			}
+		}
+	}
+}

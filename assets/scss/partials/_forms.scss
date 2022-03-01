@@ -1,0 +1,8 @@
+@layer base {
+	.is-danger {
+		@apply border-red-700;
+	}
+	.is-loading {
+		@apply opacity-50 cursor-not-allowed;
+	}
+}

@@ -1,0 +1,12 @@
+.toasted {
+	border-radius: 5px !important;
+	&.success {
+		background: #38A169 !important;
+	}
+	&.info {
+		background: #2B6CB0 !important;
+	}
+	&.error {
+		background: #9B2C2C !important;
+	}
+}

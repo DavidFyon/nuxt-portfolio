@@ -1,0 +1,22 @@
+{
+  "index": {
+    "title": "Home",
+    "description": ""
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "description": ""
+  },
+  "about": {
+    "title": "About",
+    "description": ""
+  },
+  "blog": {
+    "title": "Blog",
+    "description": ""
+  },
+  "contact": {
+    "title": "Contact",
+    "description": ""
+  }
+}

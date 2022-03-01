@@ -1,0 +1,15 @@
+@layer base {
+	nav {
+		z-index: 10;
+	}
+	.menu.active, .nuxt-link-exact-active {
+		@apply relative;
+		span {
+			&::after {
+				content: "";
+				bottom: 4px;
+				@apply absolute right-0 block w-full my-1 border-b-2 border-purple-600 rounded-full;
+			}
+		}
+	}
+}
