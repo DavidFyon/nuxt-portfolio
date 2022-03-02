@@ -1,9 +1,9 @@
 <template>
   <div>
-    <!-- INTRO -->
 		<AboutPresentation />
-    <!-- COMPETENCES -->
 		<AboutSkills />
+		<AboutVision />
+		<AboutCareer />
   </div>
 </template>
 

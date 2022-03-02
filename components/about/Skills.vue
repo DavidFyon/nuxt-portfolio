@@ -23,8 +23,8 @@
 					<div class="md:w-1/2">
 						<AboutSkillCard
 							icon="skill-ui"
-							title="UI Design"
-							content="Design system, direction artistique, charte graphique, design d’interfaces, responsive design, illustrations, animations..."
+							:title="$t('about.skills.ui.title')"
+							:content="$t('about.skills.ui.description')"
 							:logos="[
 								{ title: 'Figma', img: 'figma' },
 								{ title: 'Sketch', img: 'sketch' }
@@ -34,8 +34,8 @@
 					<div class="md:w-1/2">
 						<AboutSkillCard
 							icon="skill-ux"
-							title="UX Design"
-							content="Audit et analyse, wireframes, charte ergonomique, expérience utilisateur, design thinking, human centric..."
+							:title="$t('about.skills.ux.title')"
+							:content="$t('about.skills.ux.description')"
 							:logos="[
 								{ title: 'Zeplin', img: 'zeplin' },
 								{ title: 'Marvel', img: 'marvel' }
@@ -45,8 +45,8 @@
 					<div class="md:w-1/2">
 						<AboutSkillCard
 							icon="skill-code"
-							title="Frontend development"
-							content="Développement sur-mesure, HTML, JavaScript, SASS, Headless CMS, APIs, Responsive, SEO, Cross-Browser, Git Workflow..."
+							:title="$t('about.skills.code.title')"
+							:content="$t('about.skills.code.description')"
 							:logos="[
 								{ title: 'Nuxt', img: 'nuxt' },
 								{ title: 'VueJS', img: 'vuejs' },
@@ -59,8 +59,8 @@
 					<div class="md:w-1/2">
 						<AboutSkillCard
 							icon="skill-com"
-							title="Communication"
-							content="Stratégie de marque, naming, création de logo et identité visuelle, communication digitale, éditoriale, événementielle, photo, vidéo..."
+							:title="$t('about.skills.communication.title')"
+							:content="$t('about.skills.communication.description')"
 							:logos="[
 								{
 									title: 'Photoshop',

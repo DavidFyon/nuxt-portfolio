@@ -17,7 +17,7 @@
     },
     "skills": {
       "title": "Compétences",
-      "development": {
+      "code": {
         "title": "Développement front-end",
         "description": "Développement sur-mesure, HTML, JavaScript, SASS, Headless CMS, APIs, Responsive, SEO, Cross-Browser, Git Workflow..."
       },
@@ -32,6 +32,40 @@
       "communication": {
         "title": "Communication",
         "description": "Stratégie de marque, naming, création de logo et identité visuelle, communication digitale, éditoriale, événementielle, photo, vidéo..."
+      }
+    },
+    "vision": {
+      "title": "Vision",
+      "description": "Qu’importent les technologies, la mode du moment ou les contraintes d’un projet.<br />J’aime créer des sites et des expériences digitales ou print sur-mesure, avec comme but de vous offrir le plus beaux et le plus intuitif des outils."
+    },
+    "career": {
+      "title": "Parcours",
+      "jobs": {
+        "front": "Développeur Front",
+        "developer": "Développeur",
+        "designer": "Designer",
+        "webdesigner": "Webdesigner",
+        "graphist": "Graphiste",
+        "communication": "Chargé de communication",
+        "description": {
+          "ngtv": "Conception et développement d’interfaces tactiles et d’une console utilisateur dans le domaine du sport, gestion du site internet.",
+          "wattsense": "Conception et développement d’une console utilisateur, gestion du site internet, communication digitale et print.",
+          "apollo": "Conception et réalisation d’un navigateur internet et d’un assistant de recherche.",
+          "wizaplace": "Conception et développement de marketplace.",
+          "econocom": "Conception et développement d’applications métier.",
+          "interlude": "Conception de sites internet dynamiques, application mobiles, animations, identités visuelles et supports de communication pour des établissements du domaine de la santé.",
+          "zannier": "Conception de sites internet et vidéos pour des marques de vêtements (Chipie, IKKS, Levi’s, Z...).",
+          "fx": "Conception et réalisation de supports print et web (identités visuelles, plaquettes, sites internet...).",
+          "cci": "Mise en place de site web, conception on/off-line, audit web..."
+        },
+        "more": "Voir plus",
+        "less": "Voir moins"
+      },
+      "formation": {
+        "master": "Master d’infographie",
+        "bts": "BTS Communication",
+        "university": "Université Lyon 2",
+        "school": "Lycée St Louis/St Bruno – Lyon"
       }
     }
   },

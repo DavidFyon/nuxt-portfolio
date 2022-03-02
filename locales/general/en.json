@@ -8,8 +8,8 @@
   "about": {
     "title": "About",
     "presentation": {
-      "title": "Je suis David FYON, designer & développeur front-end",
-      "description": "Créatif, autonome et passionné je suis intéressé par toutes les nouvelles tendances dans les domaines du design, de l’interactivité et de la communication.",
+      "title": "I am David FYON, designer & front-end developer",
+      "description": "Creative, autonomous and passionate, I am interested in all new trends in the fields of design, interactivity and communication.",
       "download": "Download my CV",
       "development": "Frontend development",
       "ui": "User interface design",
@@ -17,10 +17,56 @@
     },
     "skills": {
       "title": "Skills",
-      "development": "Frontend development",
-      "ui": "UI Design",
-      "ux": "UX Design",
-      "communication": "Communication"
+      "code": {
+        "title": "Développement front-end",
+        "description": "Développement sur-mesure, HTML, JavaScript, SASS, Headless CMS, APIs, Responsive, SEO, Cross-Browser, Git Workflow..."
+      },
+      "ui": {
+        "title": "UI Design",
+        "description": "Design system, direction artistique, charte graphique, design d’interfaces, responsive design, illustrations, animations..."
+      },
+      "ux": {
+        "title": "UX Design",
+        "description": "Audit et analyse, wireframes, charte ergonomique, expérience utilisateur, design thinking, human centric..."
+      },
+      "communication": {
+        "title": "Communication",
+        "description": "Stratégie de marque, naming, création de logo et identité visuelle, communication digitale, éditoriale, événementielle, photo, vidéo..."
+      }
+    },
+    "vision": {
+      "title": "Vision",
+      "description": "No matter the technology, the fashion of the moment or the constraints of a project.<br/>I like to create custom-made websites and digital or print experiences, with the aim of offering you the most beautiful and intuitive tools."
+    },
+    "career": {
+      "title": "Career",
+      "jobs": {
+        "front": "Frontend developer",
+        "developer": "Developer",
+        "designer": "Designer",
+        "webdesigner": "Webdesigner",
+        "graphist": "Graphic designer",
+        "communication": "Communication officer",
+        "description": {
+          "ngtv": "Conception et développement d’interfaces tactiles et d’une console utilisateur dans le domaine du sport, gestion du site internet.",
+          "wattsense": "Conception et développement d’une console utilisateur, gestion du site internet, communication digitale et print.",
+          "apollo": "Conception et réalisation d’un navigateur internet et d’un assistant de recherche.",
+          "wizaplace": "Conception et développement de marketplace.",
+          "econocom": "Conception et développement d’applications métier.",
+          "interlude": "Conception de sites internet dynamiques, application mobiles, animations, identités visuelles et supports de communication pour des établissements du domaine de la santé.",
+          "zannier": "Conception de sites internet et vidéos pour des marques de vêtements (Chipie, IKKS, Levi’s, Z...).",
+          "fx": "Conception et réalisation de supports print et web (identités visuelles, plaquettes, sites internet...).",
+          "cci": "Mise en place de site web, conception on/off-line, audit web..."
+        },
+        "more": "See more",
+        "less": "See less"
+      },
+      "formation": {
+        "master": "Master d’infographie",
+        "bts": "BTS Communication",
+        "university": "Université Lyon 2",
+        "school": "Lycée St Louis/St Bruno – Lyon"
+      }
     }
   },
   "blog": {
