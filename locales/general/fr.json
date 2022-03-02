@@ -14,6 +14,25 @@
       "development": "Frontend development",
       "ui": "User interface design",
       "ux": "User experience design"
+    },
+    "skills": {
+      "title": "Compétences",
+      "development": {
+        "title": "Développement front-end",
+        "description": "Développement sur-mesure, HTML, JavaScript, SASS, Headless CMS, APIs, Responsive, SEO, Cross-Browser, Git Workflow..."
+      },
+      "ui": {
+        "title": "UI Design",
+        "description": "Design system, direction artistique, charte graphique, design d’interfaces, responsive design, illustrations, animations..."
+      },
+      "ux": {
+        "title": "UX Design",
+        "description": "Audit et analyse, wireframes, charte ergonomique, expérience utilisateur, design thinking, human centric..."
+      },
+      "communication": {
+        "title": "Communication",
+        "description": "Stratégie de marque, naming, création de logo et identité visuelle, communication digitale, éditoriale, événementielle, photo, vidéo..."
+      }
     }
   },
   "blog": {

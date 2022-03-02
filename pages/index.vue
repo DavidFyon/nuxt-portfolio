@@ -2,6 +2,8 @@
   <div>
     <!-- INTRO -->
 		<AboutPresentation />
+    <!-- COMPETENCES -->
+		<AboutSkills />
   </div>
 </template>
 

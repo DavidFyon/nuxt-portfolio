@@ -27,7 +27,8 @@ export default {
   plugins: [
     "~/plugins/scroll.js",
     "~/plugins/event-bus.js",
-    { src: '~/plugins/toast.js', mode: 'client' }
+    { src: "~/plugins/toast.js", mode: "client" },
+    "~/plugins/tooltip.js",
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
