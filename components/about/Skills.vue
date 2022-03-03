@@ -8,7 +8,7 @@
 				<AboutSkillBar :title="$t('about.skills.ui.title')" :percent="11" :show="showSkill" />
 				<AboutSkillBar :title="$t('about.skills.ux.title')" :percent="11" :show="showSkill" />
 				<AboutSkillBar
-					:title="$t('about.skills.development.title')"
+					:title="$t('about.skills.code.title')"
 					:percent="10"
 					:show="showSkill"
 				/>

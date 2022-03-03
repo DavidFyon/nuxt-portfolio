@@ -4,6 +4,7 @@
 		<AboutSkills />
 		<AboutVision />
 		<AboutCareer />
+    <AboutLastProjects />
   </div>
 </template>
 
