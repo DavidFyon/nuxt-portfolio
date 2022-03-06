@@ -3,7 +3,11 @@
     "title": "Home"
   },
   "portfolio": {
-    "title": "Portfolio"
+    "title": "Portfolio",
+    "projects": {
+      "last": "Last projects",
+      "all": "All projects"
+    }
   },
   "about": {
     "title": "About",

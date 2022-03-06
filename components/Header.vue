@@ -54,6 +54,7 @@
 					class="block py-1 mx-0 mt-0 font-normal text-white menu group focus:outline-none sm:mt-1 sm:mx-6"
 					:class="{ active: isActive }"
 					to="/"
+          @click.native="isOpen ? isOpen = false : null"
 				>
 					{{ $t('about.title') }}
 					<span
@@ -63,6 +64,7 @@
 				<nuxt-link
 					class="block py-1 mx-0 mt-0 font-normal text-white menu group sm:ml-2 sm:mt-1 focus:outline-none sm:mx-6"
 					to="/portfolio"
+          @click.native="isOpen ? isOpen = false : null"
 				>
 					{{ $t('portfolio.title') }}
 					<span
@@ -72,6 +74,7 @@
 				<nuxt-link
 					class="block py-1 mx-0 mt-0 font-normal text-white menu group sm:ml-2 sm:mt-1 focus:outline-none sm:mx-6"
 					to="/blog"
+          @click.native="isOpen ? isOpen = false : null"
 				>
 					{{ $t('blog.title') }}
 					<span
@@ -80,7 +83,7 @@
 				</nuxt-link>
 			</div>
 			<div :class="isOpen ? 'block' : 'hidden'" class="mt-3 mb-6 text-center sm:flex sm:my-0">
-				<nuxt-link to="/contact">
+				<nuxt-link to="/contact" @click.native="isOpen ? isOpen = false : null">
 					<button
 						class="px-4 py-2 font-medium tracking-wide text-white uppercase transition-colors duration-100 transform bg-purple-600 rounded-md hover:bg-purple-700 focus:outline-none"
 					>

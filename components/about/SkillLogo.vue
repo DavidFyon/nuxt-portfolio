@@ -22,19 +22,17 @@ export default {
 			default: null
 		}
 	},
-
-	data() {
+	data () {
 		return {
 			showTitle: false
-		};
+		}
 	},
-
 	computed: {
-		getImgSrc() {
+		getImgSrc () {
 			return require(`@/assets/images/logos/${this.logo}.svg`);
 		}
 	}
-};
+}
 </script>
 
 <style lang="scss" scoped>

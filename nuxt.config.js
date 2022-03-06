@@ -30,7 +30,6 @@ export default {
     { src: "~/plugins/toast.js", mode: "client" },
     "~/plugins/tooltip.js",
     "~/plugins/lazy-image.js",
-    { src: "~/plugins/vue-isotope", ssr: false },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
