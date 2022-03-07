@@ -4,30 +4,17 @@ export const state = () => ({
   projects: [
     {
       id: uuidv4(),
-      name: "Wattsense",
+      title: "Wattsense",
       slug: "wattsense",
       image: "console/home.jpg",
-      link: "wattsense/web",
       tags: ["ALL", "UI", "UX"],
       app: true,
-    },
-    {
-      id: uuidv4(),
-      name: "Wattsense",
-      slug: "wattsense",
-      image: "console/home.jpg",
-      link: "wattsense/web",
-      tags: ["ALL", "UI"],
-      app: true,
-    },
-    {
-      id: uuidv4(),
-      name: "Wattsense",
-      slug: "wattsense",
-      image: "console/home.jpg",
-      link: "wattsense/web",
-      tags: ["ALL", "UI", "UX"],
-      app: true,
-    },
-  ],
-});
+    }
+  ]
+})
+
+export const getters = {
+  getProjectById: (state) => (id) => {
+    return state.projects.find((project) => project.slug == id)
+  }
+}

@@ -1,19 +1,21 @@
 <template>
   <div class="container mx-auto xl:max-w-screen-xl portfolio">
-    <h1 class="pt-6 font-bold font-tinos">
-      {{ $t('portfolio.title') }}
-    </h1>
+    <div class="flex items-center justify-between">
+      <h1 class="pt-6 font-bold font-tinos">
+        {{ $t('portfolio.title') }}
+      </h1>
+      <PortfolioFilter @select="selectProjects" class="hidden pt-6 sm:flex" />
+    </div>
     <div class="mb-4">
-      <PortfolioFilter @select="selectProjects" />
+      <PortfolioFilter @select="selectProjects" class="flex sm:hidden" />
       <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
         <PortfolioCard
           v-for="project in filteredProjects"
           :key="project.id"
-          :title="project.name"
+          :title="project.title"
           :slug="project.slug"
           :image="project.image"
           :tags="project.tags"
-          :link="project.link"
         />
       </div>
     </div>
