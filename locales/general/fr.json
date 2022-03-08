@@ -6,7 +6,16 @@
     "title": "Portfolio",
     "projects": {
       "last": "Derniers projets",
-      "all": "Tous les projets"
+      "all": "Tous les projets",
+      "project": "Projet",
+      "functionnalities": "Principales fonctionnalités",
+      "specifications": "Caractéristiques techniques",
+      "website": "Voir le site"
+    },
+    "skills": {
+      "ui": "UI",
+      "ux": "UX",
+      "dev": "Dev"
     }
   },
   "about": {
@@ -21,16 +30,16 @@
     },
     "skills": {
       "title": "Compétences",
-      "code": {
+      "dev": {
         "title": "Développement front-end",
         "description": "Développement sur-mesure, HTML, JavaScript, SASS, Headless CMS, APIs, Responsive, SEO, Cross-Browser, Git Workflow..."
       },
       "ui": {
-        "title": "UI Design",
+        "title": "Design UI",
         "description": "Design system, direction artistique, charte graphique, design d’interfaces, responsive design, illustrations, animations..."
       },
       "ux": {
-        "title": "UX Design",
+        "title": "Design UX",
         "description": "Audit et analyse, wireframes, charte ergonomique, expérience utilisateur, design thinking, human centric..."
       },
       "communication": {

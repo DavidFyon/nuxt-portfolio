@@ -3,8 +3,10 @@
     <h1 class="pt-6 font-bold font-tinos">
       {{ $t('blog.title') }}
     </h1>
-    <div class="mb-4">
-      {{ $t('blog.soon') }}
+    <div class="flex items-center justify-center mb-16">
+      <div class="px-4 py-2 text-base text-white bg-white border border-gray-800 rounded-md bg-opacity-5">
+        {{ $t('blog.soon') }}
+      </div>
     </div>
   </div>
 </template>

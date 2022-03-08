@@ -6,7 +6,16 @@
     "title": "Portfolio",
     "projects": {
       "last": "Last projects",
-      "all": "All projects"
+      "all": "All projects",
+      "project": "Project",
+      "functionnalities": "Main functionnalities",
+      "specifications": "Technical specifications",
+      "website": "See the website"
+    },
+    "skills": {
+      "ui": "UI",
+      "ux": "UX",
+      "dev": "Dev"
     }
   },
   "about": {
@@ -21,7 +30,7 @@
     },
     "skills": {
       "title": "Skills",
-      "code": {
+      "dev": {
         "title": "Développement front-end",
         "description": "Développement sur-mesure, HTML, JavaScript, SASS, Headless CMS, APIs, Responsive, SEO, Cross-Browser, Git Workflow..."
       },

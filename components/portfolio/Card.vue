@@ -1,6 +1,6 @@
 <template>
-  <div class="cursor-pointer group" data-aos="fade-in">
-    <NuxtLink :to="`/portfolio/${slug}`">
+  <div class="cursor-pointer group">
+    <nuxt-link :to="`/portfolio/${slug}`">
       <div class="relative overflow-hidden bg-gray-900 border-4 border-gray-800 rounded-lg rounded-b-none shadow-lg h-60 sm:h-40 md:h-32 lg:h-48 xl:h-60 hover:shadow-xl">
         <VLazyImage
           class="absolute top-0 object-cover object-center w-full h-full transition duration-500 ease-in-out transform scale-100 group-hover:scale-110"
@@ -19,7 +19,7 @@
           </div>
         </div>
       </div>
-    </NuxtLink>
+    </nuxt-link>
   </div>
 </template>
 

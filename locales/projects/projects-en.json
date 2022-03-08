@@ -1,0 +1,42 @@
+{
+  "wattsense-web": {
+    "description": "Universal Building Connector",
+    "project": "Design and development of a website for a SaaS solution.",
+    "functionnalities": [
+      "Reusable components",
+			"Animations (AnimeJS)",
+			"Lazy loading",
+			"Multilingual",
+			"SEO"
+    ],
+    "specifications": [
+      "Figma",
+      "VueJS",
+      "After Effects"
+    ],
+    "url": "https://www.wattsense.com",
+    "visuals": [
+      {
+        "src": "home.jpg",
+        "alt": "Home"
+      },
+      {
+        "src": "home-illustration.jpg",
+        "alt": "Home illustration"
+      },
+      {
+        "src": "connect.jpg",
+        "alt": "Connect all"
+      },
+      {
+        "src": "how.jpg",
+        "alt": "How it works"
+      },
+      {
+        "src": "box.jpg",
+        "alt": "Box"
+      }
+    ],
+    "video": "wattsense"
+  }
+}

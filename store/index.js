@@ -5,13 +5,15 @@ export const state = () => ({
     {
       id: uuidv4(),
       title: "Wattsense",
-      slug: "wattsense",
-      image: "console/home.jpg",
-      tags: ["ALL", "UI", "UX"],
+      slug: "wattsense-web",
+      logo: "wattsense.svg",
+      image: "home.jpg",
+      tags: ["ALL", "UI", "UX", "DEV"],
+      date: "2021",
       app: true,
-    }
-  ]
-})
+    },
+  ],
+});
 
 export const getters = {
   getProjectById: (state) => (id) => {

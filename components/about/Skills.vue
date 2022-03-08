@@ -8,7 +8,7 @@
 				<AboutSkillBar :title="$t('about.skills.ui.title')" :percent="11" :show="showSkill" />
 				<AboutSkillBar :title="$t('about.skills.ux.title')" :percent="11" :show="showSkill" />
 				<AboutSkillBar
-					:title="$t('about.skills.code.title')"
+					:title="$t('about.skills.dev.title')"
 					:percent="10"
 					:show="showSkill"
 				/>
@@ -45,8 +45,8 @@
 					<div class="md:w-1/2">
 						<AboutSkillCard
 							icon="skill-code"
-							:title="$t('about.skills.code.title')"
-							:content="$t('about.skills.code.description')"
+							:title="$t('about.skills.dev.title')"
+							:content="$t('about.skills.dev.description')"
 							:logos="[
 								{ title: 'Nuxt', img: 'nuxt' },
 								{ title: 'VueJS', img: 'vuejs' },
