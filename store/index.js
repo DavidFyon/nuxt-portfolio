@@ -7,7 +7,7 @@ export const state = () => ({
       title: "Wattsense",
       slug: "wattsense-web",
       logo: "wattsense.svg",
-      image: "home.jpg",
+      image: "home-illustration.jpg",
       tags: ["ALL", "UI", "UX", "DEV"],
       date: "2021",
       app: true,

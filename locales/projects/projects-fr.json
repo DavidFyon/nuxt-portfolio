@@ -7,6 +7,7 @@
       "Animations (AnimeJS)",
       "Lazy loading",
       "Multilangues",
+      "Responsive design",
       "SEO"
     ],
     "specifications": [
@@ -35,6 +36,22 @@
       {
         "src": "box.jpg",
         "alt": "Box"
+      },
+      {
+        "src": "customer-stories.jpg",
+        "alt": "Customer Stories"
+      },
+      {
+        "src": "equipment.jpg",
+        "alt": "Equipment"
+      },
+      {
+        "src": "benefits.jpg",
+        "alt": "Benefits"
+      },
+      {
+        "src": "compatibility.jpg",
+        "alt": "Compatibility"
       }
     ],
     "video": "wattsense"
