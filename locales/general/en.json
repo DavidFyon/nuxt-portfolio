@@ -10,7 +10,8 @@
       "project": "Project",
       "functionnalities": "Main functionnalities",
       "specifications": "Technical specifications",
-      "website": "See the website"
+      "website": "See the website",
+      "back": "Back"
     },
     "skills": {
       "ui": "UI",

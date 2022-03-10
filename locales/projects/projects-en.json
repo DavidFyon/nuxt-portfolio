@@ -55,5 +55,60 @@
       }
     ],
     "video": "wattsense"
+  },
+  "wattsense-console": {
+    "description": "Universal Building Connector",
+    "project": "Design of an administration console for the management of connected buildings.",
+    "functionnalities": [
+      "Reusable components",
+      "Interactive map (Mapbox)",
+      "Graphics",
+      "Configurator",
+      "Schedule",
+      "Advanced search",
+      "Users management",
+      "Multilingual"
+    ],
+    "specifications": [
+      "Figma",
+      "VueJS / Axios",
+      "API REST"
+    ],
+    "url": "",
+    "visuals": [
+      {
+        "src": "home.jpg",
+        "alt": "Home"
+      },
+      {
+        "src": "equipments.jpg",
+        "alt": "Equipments"
+      },
+      {
+        "src": "properties.jpg",
+        "alt": "Properties"
+      },
+      {
+        "src": "schedule.jpg",
+        "alt": "Schedule wizard"
+      },
+      {
+        "src": "configuration.jpg",
+        "alt": "Configuration wizard"
+      },
+      {
+        "src": "search.jpg",
+        "alt": "Search"
+      },
+      {
+        "src": "organisation.jpg",
+        "alt": "Organisation"
+      },
+      {
+        "src": "user.jpg",
+        "alt": "User management"
+      }
+    ],
+    "video": ""
   }
 }

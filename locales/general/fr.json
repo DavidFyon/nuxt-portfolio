@@ -10,7 +10,8 @@
       "project": "Projet",
       "functionnalities": "Principales fonctionnalités",
       "specifications": "Caractéristiques techniques",
-      "website": "Voir le site"
+      "website": "Voir le site",
+      "back": "Retour"
     },
     "skills": {
       "ui": "UI",

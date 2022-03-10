@@ -1,7 +1,10 @@
 <template>
   <div class="cursor-pointer group">
     <nuxt-link :to="`/portfolio/${slug}`">
-      <div class="relative overflow-hidden bg-gray-900 border-4 border-gray-800 rounded-lg rounded-b-none shadow-lg h-60 sm:h-40 md:h-32 lg:h-48 xl:h-60 hover:shadow-xl">
+      <div
+        class="relative overflow-hidden bg-gray-900 border-4 rounded-lg rounded-b-none shadow-lg h-60 sm:h-40 md:h-48 xl:h-60 hover:shadow-xl"
+        :class="display === 'home' ? 'border-gray-900' : 'border-gray-800'"
+      >
         <VLazyImage
           class="absolute top-0 object-cover object-center w-full h-full transition duration-500 ease-in-out transform scale-100 group-hover:scale-110"
           :src="getImgSrc"
@@ -9,7 +12,10 @@
           :alt="title"
         />
       </div>
-      <div class="flex items-center justify-between w-full h-12 px-4 pt-3 pb-4 bg-gray-800 rounded-lg rounded-t-none shadow-lg">
+      <div
+        class="flex items-center justify-between w-full h-12 px-4 pt-3 pb-4 rounded-lg rounded-t-none shadow-lg"
+        :class="display === 'home' ? 'bg-gray-900' : 'bg-gray-800'"
+      >
         <div class="text-xl font-bold">{{ title }}</div>
         <div v-if="tags.length > 0" class="flex items-center justify-center">
           <div v-for="tag of tags" :key="tag">
@@ -43,6 +49,10 @@
         default: () => []
       },
       link: {
+        type: String,
+        default: ""
+      },
+      display: {
         type: String,
         default: ""
       }

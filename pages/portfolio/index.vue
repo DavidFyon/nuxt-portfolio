@@ -8,7 +8,7 @@
     </div>
     <div class="mb-4">
       <PortfolioFilter @select="selectProjects" class="flex sm:hidden" />
-      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
         <PortfolioCard
           v-for="project in filteredProjects"
           :key="project.id"
@@ -60,7 +60,7 @@ export default {
     },
     filterProjectsByCategory() {
       return this.projects.filter(project => {
-        return project.tags.includes(this.selectedProject)
+        return project.types.includes(this.selectedProject)
       })
     }
   }

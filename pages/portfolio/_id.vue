@@ -160,19 +160,26 @@
                 </li>
               </ul>
 						</div>
-						<!-- LINK -->
-						<div class="mt-8 mr-0 md:mr-10">
-							<button
-                class="px-4 py-2 font-medium tracking-wide text-white uppercase transition-colors duration-100 transform bg-purple-600 rounded-md hover:bg-purple-700 focus:outline-none"
+						<!-- LINKS -->
+            <div class="flex items-center justify-center w-full mt-8 md:justify-start">
+              <nuxt-link to="/portfolio">
+                <button class="px-4 py-2 mr-2 text-base font-medium tracking-wide text-gray-700 uppercase transition-colors duration-100 transform bg-gray-100 rounded-md md:text-sm lg:text-base md:mr-2 hover:bg-gray-200 focus:outline-none">
+                  <span>{{ $t('portfolio.projects.back') }}</span>
+                </button>
+              </nuxt-link>
+              <button
+                v-if="$t(`projects.${project.slug}.url`)"
+                class="px-4 py-2 text-base font-medium tracking-wide text-white uppercase transition-colors duration-100 transform bg-purple-600 rounded-md md:text-sm lg:text-base hover:bg-purple-700 focus:outline-none"
                 @click="loadUrl($t(`projects.${project.slug}.url`))"
               >
                 {{ $t('portfolio.projects.website') }}
               </button>
-						</div>
+            </div>
 					</div>
 				</div>
 				<div class="w-full mt-10 md:w-2/3">
 					<PortfolioVideo
+            v-if="$t(`projects.${project.slug}.video`)"
             bgcolor="bg-gray-100"
             :src="$t(`projects.${project.slug}.video`)"
           />
