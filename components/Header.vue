@@ -71,7 +71,7 @@
 						class="block w-0 my-1 transition-all duration-200 ease-in-out border-b-2 border-purple-600 rounded-full group-hover:w-full"
 					/>
 				</nuxt-link>
-				<nuxt-link
+				<!-- <nuxt-link
 					class="block py-1 mx-0 mt-0 font-normal text-white menu group sm:ml-2 sm:mt-1 focus:outline-none sm:mx-6"
 					to="/blog"
           @click.native="isOpen ? isOpen = false : null"
@@ -80,7 +80,7 @@
 					<span
 						class="block w-0 my-1 transition-all duration-200 ease-in-out border-b-2 border-purple-600 rounded-full group-hover:w-full"
 					/>
-				</nuxt-link>
+				</nuxt-link> -->
 			</div>
 			<div :class="isOpen ? 'block' : 'hidden'" class="mt-3 mb-6 text-center sm:flex sm:my-0">
 				<nuxt-link to="/contact" @click.native="isOpen ? isOpen = false : null">

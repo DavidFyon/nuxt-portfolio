@@ -17,20 +17,20 @@
         </div>
         <div class="flex items-center justify-end w-full md:w-1/3">
 					<!-- ARROWS -->
-					<nuxt-link to="/">
+					<div class="cursor-pointer" @click="previousProject">
 						<img
 							alt="prev"
 							src="@/assets/images/icons/arrow.svg"
 							class="w-10 h-10 mt-6 mr-2 transition-opacity duration-100 transform -rotate-180 md:mt-0 opacity-40 hover:opacity-100"
 						/>
-					</nuxt-link>
-					<nuxt-link to="/">
+					</div>
+					<div class="cursor-pointer" @click="nextProject">
 						<img
 							alt="next"
 							src="@/assets/images/icons/arrow.svg"
 							class="w-10 h-10 mt-6 transition-opacity duration-100 md:mt-0 opacity-40 hover:opacity-100"
 						/>
-					</nuxt-link>
+					</div>
 				</div>
       </div>
     </div>
@@ -112,7 +112,6 @@
 						</div>
 					</div>
 				</div>
-
 				<!-- CONTENT -->
 				<div class="w-full mt-10 md:w-1/3">
 					<div
@@ -201,9 +200,10 @@
 import { mapState } from "vuex"
 
 export default {
-  data() {
+  data () {
 		return {
-			stickyTop: "0"
+			stickyTop: "0",
+      selectedIdx: 0
 		}
 	},
   computed: {
@@ -220,17 +220,26 @@ export default {
   },
   mounted () {
     window.scrollTo(0, 0)
-    console.log(this.filteredProjects.findIndex(project => project.slug === this.$route.params.id))
+    this.selectedIdx = this.filteredProjects.findIndex(project => project.slug === this.$route.params.id)
   },
   methods: {
-		onScroll() {
+		onScroll () {
 			if (window.pageYOffset > 0) {
 				this.stickyTop = "7rem";
 			}
 		},
-    loadUrl(url) {
+    loadUrl (url) {
 			window.open(url, "_blank");
-		}
+		},
+    nextProject () {
+      this.selectedIdx >= this.filteredProjects.length - 1 ? this.selectedIdx = 0 : this.selectedIdx++
+      this.$router.push(`/portfolio/${this.filteredProjects[this.selectedIdx].slug}`)
+    },
+    previousProject () {
+      this.selectedIdx <= 0 ? this.selectedIdx = this.filteredProjects.length - 1 : this.selectedIdx--
+      console.log(this.filteredProjects[this.selectedIdx])
+      this.$router.push(`/portfolio/${this.filteredProjects[this.selectedIdx].slug}`)
+    }
 	}
 }
 </script>
