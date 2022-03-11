@@ -1,4 +1,60 @@
 {
+  "ngtv-web": {
+    "description": "Empower Sport Experience",
+    "project": "Conception et développement d'un site vitrine dans le domaine du sport.",
+    "functionnalities": [
+      "Composants réutilisables",
+      "Animations (AOS)",
+      "Lazy loading",
+      "Multilangues",
+      "Responsive design",
+      "SEO"
+    ],
+    "specifications": [
+      "Figma",
+      "Nuxt / Tailwind"
+    ],
+    "url": "https://ngtvexperience.com",
+    "visuals": [
+      {
+        "src": "home.jpg",
+        "alt": "Home"
+      },
+      {
+        "src": "sportcenters.jpg",
+        "alt": "Sport Centers"
+      },
+      {
+        "src": "video.jpg",
+        "alt": "Vidéo"
+      },
+      {
+        "src": "installation.jpg",
+        "alt": "Installation"
+      },
+      {
+        "src": "testimonials.jpg",
+        "alt": "Témoignages"
+      },
+      {
+        "src": "hightlevel.jpg",
+        "alt": "Haut Niveau"
+      },
+      {
+        "src": "benefits.jpg",
+        "alt": "Avantages"
+      },
+      {
+        "src": "who.jpg",
+        "alt": "Qui sommes-nous"
+      },
+      {
+        "src": "contact.jpg",
+        "alt": "Contact"
+      }
+    ],
+    "video": ""
+  },
   "wattsense-web": {
     "description": "Connecteur Universel de Bâtiment",
     "project": "Conception et développement d'un site internet pour une solution SaaS.",

@@ -122,7 +122,7 @@
 						<div
 							class="flex items-center justify-center mr-0 md:mr-10"
 						>
-							<img :src="getLogoSrc" :alt="project.title" class="w-auto h-auto" />
+							<img :src="getLogoSrc" :alt="project.title" class="w-48 h-auto" />
 						</div>
 						<!-- PROJECT -->
 						<div
@@ -215,7 +215,7 @@ export default {
       return this.$store.getters.getProjectById(this.$route.params.id)
     },
     getLogoSrc () {
-      return require(`@/assets/images/logos/${this.project.logo}`)
+      return require(`@/assets/images/logos/projects/${this.project.logo}`)
     }
   },
   mounted () {
