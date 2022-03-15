@@ -93,8 +93,10 @@ export default {
 			showSkill: false
 		}
 	},
-	mounted () {
-		this.showSkill = true
+	created () {
+    setTimeout(() => {
+      this.showSkill = true
+    }, 100)
 	}
 }
 </script>
