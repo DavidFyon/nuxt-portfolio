@@ -32,7 +32,7 @@ module.exports = {
       },
       opacity: {
         90: "0.90",
-      }
+      },
     },
     container: {
       padding: {
@@ -50,6 +50,9 @@ module.exports = {
     zIndex: {
       "-1": "-1",
     },
+    transitionProperty: {
+      width: "width",
+    }
   },
   variants: {
     backgroundColor: ["responsive", "hover", "focus", "active", "group-hover"],
