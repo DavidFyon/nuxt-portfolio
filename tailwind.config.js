@@ -49,18 +49,18 @@ module.exports = {
     },
     zIndex: {
       "-1": "-1",
-    },
-    transitionProperty: {
-      width: "width",
     }
   },
   variants: {
+    display: ["responsive", "hover", "focus", "active", "group-hover"],
     backgroundColor: ["responsive", "hover", "focus", "active", "group-hover"],
     textColor: ["responsive", "hover", "focus", "active", "group-hover"],
     borderColor: ["responsive", "hover", "focus", "active", "group-hover"],
     width: ["responsive", "hover", "focus", "active", "group-hover"],
+    height: ["responsive", "hover", "focus", "active", "group-hover"],
     opacity: ["responsive", "hover", "focus", "active", "group-hover"],
     scale: ["responsive", "hover", "focus", "active", "group-hover"],
+    grayscale: ["responsive", "hover", "focus", "active", "group-hover"],
   },
   plugins: [],
 };
