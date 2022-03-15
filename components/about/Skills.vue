@@ -5,17 +5,21 @@
 				<h2 class="mb-6 font-bold font-tinos">
           {{ $t('about.skills.title') }}
         </h2>
-				<AboutSkillBar :title="$t('about.skills.ui.title')" :percent="11" :show="showSkill" />
-				<AboutSkillBar :title="$t('about.skills.ux.title')" :percent="11" :show="showSkill" />
+				<AboutSkillBar
+          :title="$t('about.skills.ui.title')"
+          :percent="11"
+        />
+				<AboutSkillBar
+          :title="$t('about.skills.ux.title')"
+          :percent="11"
+        />
 				<AboutSkillBar
 					:title="$t('about.skills.dev.title')"
 					:percent="10"
-					:show="showSkill"
 				/>
 				<AboutSkillBar
 					:title="$t('about.skills.communication.title')"
 					:percent="8"
-					:show="showSkill"
 				/>
 			</div>
 			<div class="w-full lg:w-2/3">
@@ -85,16 +89,3 @@
 		</div>
 	</div>
 </template>
-
-<script>
-export default {
-	data () {
-		return {
-			showSkill: false
-		}
-	},
-	mounted () {
-		this.showSkill = true
-	}
-}
-</script>
