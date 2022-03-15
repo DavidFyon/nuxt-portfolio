@@ -52,6 +52,7 @@
 			<div :class="isOpen ? 'block' : 'hidden'" class="text-center sm:flex">
 				<nuxt-link
 					class="block py-1 mx-0 mt-0 font-normal text-white menu group focus:outline-none sm:mt-1 sm:mx-6"
+          :class="{ active: isActive }"
 					to="/"
           @click.native="isOpen ? isOpen = false : null"
 				>
