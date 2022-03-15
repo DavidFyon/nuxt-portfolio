@@ -1,6 +1,6 @@
 <template>
-  <div class="container mx-auto xl:max-w-screen-xl portfolio">
-    <div class="flex items-center justify-between">
+  <div class="container mx-auto xl:max-w-screen-xl">
+    <div class="flex items-center justify-between -mt-3 sm:mt-0">
       <h1 class="pt-6 font-bold font-tinos">
         {{ $t('portfolio.title') }}
       </h1>
@@ -9,7 +9,7 @@
     <div class="mb-4">
       <PortfolioFilter @select="selectProjects" class="flex sm:hidden" />
       <div class="flex items-center justify-center">
-        <div class="px-2 py-1 mb-4 text-sm text-white bg-white border border-gray-800 rounded-md bg-opacity-5">
+        <div class="px-2 py-1 mt-2 mb-6 text-sm text-white bg-white border border-gray-800 rounded-md sm:mb-4 bg-opacity-5">
           {{ $t('portfolio.integration') }}
         </div>
       </div>

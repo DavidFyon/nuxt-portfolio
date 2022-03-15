@@ -1,8 +1,10 @@
 <template>
   <div class="container mx-auto xl:max-w-screen-xl">
-    <h1 class="pt-6 font-bold font-tinos">
-      {{ $t('contact.title') }}
-    </h1>
+    <div class="flex -mt-3 sm:mt-0">
+      <h1 class="pt-6 font-bold font-tinos">
+        {{ $t('contact.title') }}
+      </h1>
+    </div>
     <div class="flex flex-wrap mb-4">
       <div
         class="w-full mt-4 mb-4 border-none lg:mt-0 lg:mb-0 lg:pr-10 lg:border-r-2 lg:border-white lg:border-opacity-25 lg:border-solid lg:w-2/3"
