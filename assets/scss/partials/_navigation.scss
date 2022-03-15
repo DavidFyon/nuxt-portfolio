@@ -2,7 +2,7 @@
 	nav {
 		z-index: 10;
 	}
-	.active, .nuxt-link-exact-active {
+	.active {
 		@apply relative;
 		span {
 			&::after {
