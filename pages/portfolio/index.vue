@@ -8,6 +8,11 @@
     </div>
     <div class="mb-4">
       <PortfolioFilter @select="selectProjects" class="flex sm:hidden" />
+      <div class="flex items-center justify-center">
+        <div class="px-2 py-1 mb-4 text-sm text-white bg-white border border-gray-800 rounded-md bg-opacity-5">
+          {{ $t('portfolio.integration') }}
+        </div>
+      </div>
       <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
         <PortfolioCard
           v-for="project in filteredProjects"

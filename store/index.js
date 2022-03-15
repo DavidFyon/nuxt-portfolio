@@ -7,7 +7,7 @@ export const state = () => ({
       title: "NGTV Expérience",
       slug: "ngtv-web",
       logo: "ngtv.svg",
-      image: "home.jpg",
+      image: "sportcenters.jpg",
       types: ["ALL", "WEB"],
       tags: ["ALL", "UI", "UX", "DEV"],
       date: "2021",
@@ -32,8 +32,8 @@ export const state = () => ({
       tags: ["ALL", "UI", "UX", "DEV"],
       date: "2021",
     },
-  ]
-})
+  ],
+});
 
 export const getters = {
   getProjectById: (state) => (id) => {

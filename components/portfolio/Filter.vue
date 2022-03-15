@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center justify-center mt-0 mb-4 md:justify-end sm:-mt-4">
+  <div class="flex items-center justify-center mt-0 mb-4 md:justify-end sm:-mt-2">
     <button
       v-for="type of types"
       :key="type"

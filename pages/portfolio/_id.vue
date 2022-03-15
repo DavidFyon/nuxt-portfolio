@@ -200,6 +200,18 @@
 import { mapState } from "vuex"
 
 export default {
+  	head () {
+    return {
+      title: this.project.title,
+      meta: [
+        {
+          hid: 'portfolio',
+          name: 'portfolio',
+          content: this.project.description
+        }
+      ]
+    }
+  },
   data () {
 		return {
 			stickyTop: "0",

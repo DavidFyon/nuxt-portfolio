@@ -4,6 +4,7 @@
   },
   "portfolio": {
     "title": "Portfolio",
+    "integration": "Currently being integrated...",
     "projects": {
       "last": "Last projects",
       "all": "All projects",
