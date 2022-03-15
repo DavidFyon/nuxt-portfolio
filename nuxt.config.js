@@ -1,4 +1,10 @@
 export default {
+  // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
+  ssr: false,
+
+  // Target: https://go.nuxtjs.dev/config-target
+  target: "static",
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: "nuxt-portfolio",
@@ -12,7 +18,7 @@ export default {
       { name: "format-detection", content: "telephone=no" },
     ],
     link: [
-      { rel: "icon", type:"image/svg+xml", href: "/favicon.svg" },
+      { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
       {
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Tinos&family=Inter:wght@400;500;600;700;800;900&display=fallback",
