@@ -52,8 +52,8 @@
 			<div :class="isOpen ? 'block' : 'hidden'" class="text-center sm:flex">
 				<nuxt-link
 					class="block py-1 mx-0 mt-0 font-normal text-white menu group focus:outline-none sm:mt-1 sm:mx-6"
-          :class="{ active: isActive }"
-					to="/"
+					:class="{ home: isHome }"
+          to="/"
           @click.native="isOpen ? isOpen = false : null"
 				>
 					{{ $t('about.title') }}
@@ -110,12 +110,11 @@ export default {
 		}
 	},
   computed: {
-    isActive () {
-      if (this.$route.path.startsWith('/portfolio')) {
-        return true
-      } else {
-        return false
-      }
+    isHome() {
+      return this.$route.path === '/'
+    },
+    isActive() {
+      return this.$route.path.startsWith('/portfolio')
     }
   },
 	mounted() {
