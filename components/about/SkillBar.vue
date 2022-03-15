@@ -4,7 +4,7 @@
 		<div class="w-full h-2 bg-indigo-800 bg-opacity-50 rounded-lg">
 			<div
 				class="block h-2 transition-all duration-1000 ease-out bg-indigo-600 rounded-lg gradiant"
-				:class="show ? `w-${percent}/12 sm:w-${percent}/12` : 'w-0 sm:w-0'"
+				:class="show ? `w-${percent}/12` : 'w-0'"
 			/>
 		</div>
 	</div>
