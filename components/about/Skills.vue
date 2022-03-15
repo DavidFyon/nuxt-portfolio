@@ -102,7 +102,9 @@ export default {
 		}
 	},
 	mounted () {
-		this.showSkill = true
+    setTimeout(function() {
+      this.showSkill = true
+    }.bind(this), 600)
 	}
 }
 </script>
