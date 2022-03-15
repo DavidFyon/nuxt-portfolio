@@ -1,7 +1,7 @@
 <template>
 	<div class="pt-16 pb-16 md:pt-32 md:pb-32">
 		<div class="container flex flex-wrap mx-auto xl:max-w-screen-xl">
-			<div class="w-full md:w-1/2">
+			<div class="w-full pr-0 md:w-1/2 md:pr-6 lg:pr-0">
 				<h1
 					class="mt-0 text-4xl font-bold leading-tight font-tinos"
 					data-aos="fade-in"

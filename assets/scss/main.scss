@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
 @import "partials/globals";
 @import "partials/fonts";
 @import "partials/links";
@@ -12,7 +16,3 @@
 @import "partials/animations";
 @import "partials/transitions";
 @import "partials/portfolio";
-
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
