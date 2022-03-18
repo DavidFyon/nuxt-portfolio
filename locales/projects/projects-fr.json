@@ -55,6 +55,69 @@
     ],
     "video": ""
   },
+  "ngtv-app": {
+    "description": "Empower Sport Experience",
+    "project": "Design UI/UX pour une application mobile dans le domaine du sport.",
+    "functionnalities": [
+      "Onboarding",
+      "Connexion / Inscription",
+      "Paramètres",
+      "Sessions (détails, stats...)",
+      "Gestion de découpes",
+      "Gestion de d'équipes",
+      "Gestion de compétitions",
+      "Gestion de concours"
+    ],
+    "specifications": [
+      "Retours utilisateurs",
+      "Echanges inter-services",
+      "Figma"
+    ],
+    "url": "https://apps.apple.com/fr/app/id1524655564",
+    "visuals": [
+      {
+        "src": "onboarding.jpg",
+        "alt": "Onboarding"
+      },
+      {
+        "src": "login.jpg",
+        "alt": "Connexion / Inscription"
+      },
+      {
+        "src": "home.jpg",
+        "alt": "Accueil / Paramètres"
+      },
+      {
+        "src": "session.jpg",
+        "alt": "Session"
+      },
+      {
+        "src": "session2.jpg",
+        "alt": "Session"
+      },
+      {
+        "src": "session3.jpg",
+        "alt": "Session"
+      },
+      {
+        "src": "cuttings.jpg",
+        "alt": "Découpes"
+      },
+      {
+        "src": "community.jpg",
+        "alt": "Communauté"
+      },
+      {
+        "src": "competition.jpg",
+        "alt": "Compétition"
+      },
+      {
+        "src": "contest.jpg",
+        "alt": "Concours"
+      }
+    ],
+    "video": ""
+  },
   "wattsense-web": {
     "description": "Connecteur Universel de Bâtiment",
     "project": "Conception et développement d'un site internet pour une solution SaaS.",

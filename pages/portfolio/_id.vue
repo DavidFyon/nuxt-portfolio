@@ -171,7 +171,9 @@
                 class="px-4 py-2 text-base font-medium tracking-wide text-white uppercase transition-colors duration-100 transform bg-purple-600 rounded-md md:text-sm lg:text-base hover:bg-purple-700 focus:outline-none"
                 @click="loadUrl($t(`projects.${project.slug}.url`))"
               >
-                {{ $t('portfolio.projects.website') }}
+                <span v-if="project.types.includes('WEB')">{{ $t('portfolio.projects.website') }}</span>
+                <span v-if="project.types.includes('APP')">{{ $t('portfolio.projects.app') }}</span>
+                <span v-if="project.types.includes('ANIMATION')">{{ $t('portfolio.projects.animation') }}</span>
               </button>
             </div>
 					</div>

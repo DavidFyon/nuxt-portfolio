@@ -36,6 +36,7 @@ export default {
     { src: "~/plugins/toast.js", mode: "client" },
     "~/plugins/tooltip.js",
     "~/plugins/lazy-image.js",
+    "~/plugins/flags.js",
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

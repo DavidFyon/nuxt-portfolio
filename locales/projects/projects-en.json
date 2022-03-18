@@ -55,6 +55,69 @@
     ],
     "video": ""
   },
+  "ngtv-app": {
+    "description": "Empower Sport Experience",
+    "project": "UI/UX design for a mobile application in the field of sports.",
+    "functionnalities": [
+      "Onboarding",
+      "Login / Signup",
+      "Settings",
+      "Sessions (details, stats...)",
+      "Cutting management",
+      "Team management",
+      "Competition management",
+      "Contest management"
+    ],
+    "specifications": [
+      "User feedbacks",
+      "Inter-services exchanges",
+      "Figma"
+    ],
+    "url": "https://apps.apple.com/us/app/id1524655564",
+    "visuals": [
+      {
+        "src": "onboarding.jpg",
+        "alt": "Onboarding"
+      },
+      {
+        "src": "login.jpg",
+        "alt": "Login / Signup"
+      },
+      {
+        "src": "home.jpg",
+        "alt": "Home / Settings"
+      },
+      {
+        "src": "session.jpg",
+        "alt": "Session"
+      },
+      {
+        "src": "session2.jpg",
+        "alt": "Session"
+      },
+      {
+        "src": "session3.jpg",
+        "alt": "Session"
+      },
+      {
+        "src": "cuttings.jpg",
+        "alt": "Cuttings"
+      },
+      {
+        "src": "community.jpg",
+        "alt": "Community"
+      },
+      {
+        "src": "competition.jpg",
+        "alt": "Competition"
+      },
+      {
+        "src": "contest.jpg",
+        "alt": "Contest"
+      }
+    ],
+    "video": ""
+  },
   "wattsense-web": {
     "description": "Universal Building Connector",
     "project": "Design and development of a website for a SaaS solution.",

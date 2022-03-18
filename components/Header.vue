@@ -49,7 +49,7 @@
 					</button>
 				</div>
 			</div>
-			<div :class="isOpen ? 'block' : 'hidden'" class="text-center sm:flex">
+			<div :class="isOpen ? 'block' : 'hidden'" class="ml-0 text-center sm:flex sm:ml-10">
 				<nuxt-link
 					class="block py-1 mx-0 mt-0 font-normal text-white menu group focus:outline-none sm:mt-1 sm:mx-6"
 					:class="{ home: isHome }"
@@ -92,6 +92,9 @@
 					</button>
 				</nuxt-link>
 				<!-- <locale-switcher /> -->
+        <div class="hidden ml-4 sm:block" v-tooltip="'Pray For Ukraine'">
+          <country-flag country='ua' size='normal' shadow v-bind="attrs" v-on="on" />
+        </div>
 			</div>
 		</div>
 	</header>
@@ -143,5 +146,13 @@ export default {
 <style lang="scss" scoped>
 .scrolled {
 	@apply shadow-2xl;
+}
+.tooltip {
+  .tooltip-inner {
+    background: rgba(37, 40, 44, 0.8) !important;
+  }
+  .tooltip-arrow {
+    border-color: rgba(37, 40, 44, 0.8) !important;
+  }
 }
 </style>

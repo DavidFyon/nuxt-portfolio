@@ -5,6 +5,16 @@ export const state = () => ({
     {
       id: uuidv4(),
       title: "NGTV Expérience",
+      slug: "ngtv-app",
+      logo: "ngtv.svg",
+      image: "login.jpg",
+      types: ["ALL", "APP"],
+      tags: ["ALL", "UI", "UX"],
+      date: "2021-20122",
+    },
+    {
+      id: uuidv4(),
+      title: "NGTV Expérience",
       slug: "ngtv-web",
       logo: "ngtv.svg",
       image: "sportcenters.jpg",
