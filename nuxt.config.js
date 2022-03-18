@@ -1,3 +1,5 @@
+import { mapState } from "vuex"
+
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
@@ -82,6 +84,18 @@ export default {
   },
   env: {
     baseUrl: process.env.NUXT_ENV_BASE_URL || "http://localhost:3000",
+  },
+
+  generate: {
+    routes () {
+      const projects = require("./store/index.js").state().projects
+      return projects.map((project) => {
+        return {
+          route: `/${project.slug}`,
+          payload: project,
+        }
+      })
+    }
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
