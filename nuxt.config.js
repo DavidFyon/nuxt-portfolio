@@ -91,7 +91,7 @@ export default {
       const projects = require("./store/index.js").state().projects
       return projects.map((project) => {
         return {
-          route: `/${project.slug}`,
+          route: `/portfolio/${project.slug}`,
           payload: project,
         }
       })
