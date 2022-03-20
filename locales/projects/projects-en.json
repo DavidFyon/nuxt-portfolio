@@ -12,7 +12,8 @@
     ],
     "specifications": [
       "Figma",
-      "Nuxt / Tailwind"
+      "Nuxt / Tailwind",
+      "GraphQL"
     ],
     "url": "https://ngtvexperience.com",
     "visuals": [
@@ -114,6 +115,69 @@
       {
         "src": "contest.jpg",
         "alt": "Contest"
+      }
+    ],
+    "video": ""
+  },
+  "ngtv-console": {
+    "description": "Empower Sport Experience",
+    "project": "Design and development of an administration console for the management of sports centers.",
+    "functionnalities": [
+      "Multi-center management",
+      "Statistics",
+      "Management of sessions, players, sports center...",
+      "Videos",
+      "Monitoring"
+    ],
+    "specifications": [
+      "Figma",
+      "Nuxt / Vuetify"
+    ],
+    "url": "https://apps.apple.com/fr/app/id1524655564",
+    "visuals": [
+      {
+        "src": "login.jpg",
+        "alt": "Login"
+      },
+      {
+        "src": "home.jpg",
+        "alt": "Home"
+      },
+      {
+        "src": "sessions.jpg",
+        "alt": "Sessions"
+      },
+      {
+        "src": "sessions-hi5.jpg",
+        "alt": "Sessions Hi5"
+      },
+      {
+        "src": "center.jpg",
+        "alt": "Center"
+      },
+      {
+        "src": "players.jpg",
+        "alt": "Players"
+      },
+      {
+        "src": "team.jpg",
+        "alt": "Team"
+      },
+      {
+        "src": "competition.jpg",
+        "alt": "Competition"
+      },
+      {
+        "src": "events.jpg",
+        "alt": "Events"
+      },
+      {
+        "src": "videos.jpg",
+        "alt": "Videos"
+      },
+      {
+        "src": "monitoring.jpg",
+        "alt": "Monitoring"
       }
     ],
     "video": ""

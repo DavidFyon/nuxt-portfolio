@@ -10,7 +10,17 @@ export const state = () => ({
       image: "login.jpg",
       types: ["ALL", "APP"],
       tags: ["ALL", "UI", "UX"],
-      date: "2021-20122",
+      date: "2021-2022",
+    },
+    {
+      id: uuidv4(),
+      title: "NGTV Expérience",
+      slug: "ngtv-console",
+      logo: "ngtv.svg",
+      image: "home.jpg",
+      types: ["ALL", "APP"],
+      tags: ["ALL", "UI", "UX", "DEV"],
+      date: "2021-2022",
     },
     {
       id: uuidv4(),

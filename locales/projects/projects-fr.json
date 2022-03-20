@@ -118,6 +118,70 @@
     ],
     "video": ""
   },
+  "ngtv-console": {
+    "description": "Empower Sport Experience",
+    "project": "Conception d'une console d’administration pour la gestion de centres sportifs.",
+    "functionnalities": [
+      "Gestion multi-centres",
+      "Statistiques",
+      "Gestion de sessions, joueurs, centres sportifs...",
+      "Vidéos",
+      "Monitoring"
+    ],
+    "specifications": [
+      "Figma",
+      "Nuxt / Vuetify",
+      "GraphQL"
+    ],
+    "url": "https://apps.apple.com/fr/app/id1524655564",
+    "visuals": [
+      {
+        "src": "login.jpg",
+        "alt": "Login"
+      },
+      {
+        "src": "home.jpg",
+        "alt": "Accueil"
+      },
+      {
+        "src": "sessions.jpg",
+        "alt": "Sessions"
+      },
+      {
+        "src": "sessions-hi5.jpg",
+        "alt": "Sessions Hi5"
+      },
+      {
+        "src": "center.jpg",
+        "alt": "Centre"
+      },
+      {
+        "src": "players.jpg",
+        "alt": "Joueurs"
+      },
+      {
+        "src": "team.jpg",
+        "alt": "Equipe"
+      },
+      {
+        "src": "competition.jpg",
+        "alt": "Compétition"
+      },
+      {
+        "src": "events.jpg",
+        "alt": "Evénements"
+      },
+      {
+        "src": "videos.jpg",
+        "alt": "Vidéos"
+      },
+      {
+        "src": "monitoring.jpg",
+        "alt": "Monitoring"
+      }
+    ],
+    "video": ""
+  },
   "wattsense-web": {
     "description": "Connecteur Universel de Bâtiment",
     "project": "Conception et développement d'un site internet pour une solution SaaS.",
