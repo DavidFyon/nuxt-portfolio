@@ -56,6 +56,75 @@
     ],
     "video": ""
   },
+  "ngtv-touchapp": {
+    "description": "Empower Sport Experience",
+    "project": "UI/UX design for a touch application for sports center.",
+    "functionnalities": [
+      "Configuration",
+      "Match management (score, events...)",
+      "Session management (postmatch)"
+    ],
+    "specifications": [
+      "Figma",
+      "Nuxt / Vuetify"
+    ],
+    "url": "",
+    "visuals": [
+      {
+        "src": "home.jpg",
+        "alt": "Home"
+      },
+      {
+        "src": "slider.jpg",
+        "alt": "Mode Slider"
+      },
+      {
+        "src": "incognito-foot.jpg",
+        "alt": "Incognito Foot"
+      },
+      {
+        "src": "incognito-basket.jpg",
+        "alt": "Incognito Basket"
+      },
+      {
+        "src": "incognito-raquette.jpg",
+        "alt": "Incognito Raquette"
+      },
+      {
+        "src": "easyconnect.jpg",
+        "alt": "Easy Connect"
+      },
+      {
+        "src": "team.jpg",
+        "alt": "Easy Connect team choice"
+      },
+      {
+        "src": "team.jpg",
+        "alt": "Easy Connect team choice"
+      },
+      {
+        "src": "easyconnect-match.jpg",
+        "alt": "Easy Connect - Match"
+      },
+      {
+        "src": "easyconnect-event.jpg",
+        "alt": "Easy Connect - Event"
+      },
+      {
+        "src": "easyconnect-result.jpg",
+        "alt": "Easy Connect - Result"
+      },
+      {
+        "src": "sessions.jpg",
+        "alt": "Sessions"
+      },
+      {
+        "src": "postmatch.jpg",
+        "alt": "Postmatch"
+      }
+    ],
+    "video": ""
+  },
   "ngtv-app": {
     "description": "Empower Sport Experience",
     "project": "UI/UX design for a mobile application in the field of sports.",

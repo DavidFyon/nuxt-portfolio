@@ -25,6 +25,16 @@ export const state = () => ({
     {
       id: uuidv4(),
       title: "NGTV Expérience",
+      slug: "ngtv-touchapp",
+      logo: "ngtv.svg",
+      image: "slider.jpg",
+      types: ["ALL", "APP"],
+      tags: ["ALL", "UI", "UX", "DEV"],
+      date: "2021-2022",
+    },
+    {
+      id: uuidv4(),
+      title: "NGTV Expérience",
       slug: "ngtv-web",
       logo: "ngtv.svg",
       image: "sportcenters.jpg",
