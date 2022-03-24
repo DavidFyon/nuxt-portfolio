@@ -110,6 +110,24 @@
 								{{ $t('portfolio.skills.dev') }}
 							</span>
 						</div>
+            <!-- COMMUNICATION -->
+						<div
+							v-if="project.tags.includes('COMMUNICATION')"
+							class="flex items-center text-sm text-gray-400 uppercase"
+						>
+							<div
+								class="inline-flex items-center justify-center w-5 h-5 mr-2 text-indigo-600"
+							>
+								<img
+									alt="Communication"
+									class="w-auto h-full"
+									src="@/assets/images/icons/communication.svg"
+								/>
+							</div>
+							<span class="hidden md:block">
+								{{ $t('portfolio.skills.communication') }}
+							</span>
+						</div>
 					</div>
 				</div>
 				<!-- CONTENT -->

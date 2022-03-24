@@ -62,6 +62,16 @@ export const state = () => ({
       tags: ["ALL", "UI", "UX", "DEV"],
       date: "2021",
     },
+    {
+      id: uuidv4(),
+      title: "Continental",
+      slug: "continental-print",
+      logo: "continental.svg",
+      image: "cover.jpg",
+      types: ["ALL", "PRINT"],
+      tags: ["ALL", "COMMUNICATION"],
+      date: "2018-2020",
+    },
   ],
 });
 

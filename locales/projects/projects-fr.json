@@ -358,5 +358,48 @@
       }
     ],
     "video": ""
+  },
+  "continental-print": {
+    "description": "The Future in Motion",
+    "project": "Conception de plaquettes commerciales pour Continental.",
+    "functionnalities": [
+      "Mise en page",
+      "Application d'une charte graphique",
+      "Illustrations",
+      "Retouche photo"
+    ],
+    "specifications": [
+      "Indesign",
+      "Illustrator",
+      "Photoshop"
+    ],
+    "url": "",
+    "visuals": [
+      {
+        "src": "maintenance1.jpg",
+        "alt": "Maintenance industrielle"
+      },
+      {
+        "src": "maintenance2.jpg",
+        "alt": "Maintenance industrielle"
+      },
+      {
+        "src": "brasseries1.jpg",
+        "alt": "Brasseries"
+      },
+      {
+        "src": "brasseries2.jpg",
+        "alt": "Brasseries"
+      },
+      {
+        "src": "ferroviaire1.jpg",
+        "alt": "Industrie ferroviaire"
+      },
+      {
+        "src": "ferroviaire2.jpg",
+        "alt": "Industrie ferroviaire"
+      }
+    ],
+    "video": ""
   }
 }

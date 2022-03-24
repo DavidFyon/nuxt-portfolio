@@ -23,7 +23,8 @@ export default {
       default: () => [
         "ALL",
         "WEB",
-        "APP"
+        "APP",
+        "PRINT"
       ]
     }
   }

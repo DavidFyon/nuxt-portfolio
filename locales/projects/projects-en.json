@@ -362,5 +362,48 @@
       }
     ],
     "video": ""
+  },
+  "continental-print": {
+    "description": "The Future in Motion",
+    "project": "Design of commercial brochures for Continental.",
+    "functionnalities": [
+      "Page layout",
+      "Application of a graphic charter",
+      "Illustrations",
+      "Photo editing"
+    ],
+    "specifications": [
+      "Indesign",
+      "Illustrator",
+      "Photoshop"
+    ],
+    "url": "",
+    "visuals": [
+      {
+        "src": "maintenance1.jpg",
+        "alt": "Industrial maintenance"
+      },
+      {
+        "src": "maintenance2.jpg",
+        "alt": "Industrial maintenance"
+      },
+      {
+        "src": "brasseries1.jpg",
+        "alt": "Breweries"
+      },
+      {
+        "src": "brasseries2.jpg",
+        "alt": "Breweries"
+      },
+      {
+        "src": "ferroviaire1.jpg",
+        "alt": "Railway industry"
+      },
+      {
+        "src": "ferroviaire2.jpg",
+        "alt": "Railway industry"
+      }
+    ],
+    "video": ""
   }
 }
