@@ -81,7 +81,7 @@
               </svg>
             </span>
             <span>
-              17 chemin de la Combat<br />69530 Orliénas
+              26 route de la vallée du Garon<br />69510 Thurins
             </span>
           </div>
           <div class="flex mt-10 mb-4">

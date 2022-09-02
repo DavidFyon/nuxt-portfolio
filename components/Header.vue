@@ -92,9 +92,9 @@
 					</button>
 				</nuxt-link>
 				<!-- <locale-switcher /> -->
-        <div class="hidden ml-4 sm:block" v-tooltip="'Pray For Ukraine'">
+        <!-- <div class="hidden ml-4 sm:block" v-tooltip="'Pray For Ukraine'">
           <country-flag country='ua' size='normal' shadow v-bind="attrs" v-on="on" />
-        </div>
+        </div> -->
 			</div>
 		</div>
 	</header>

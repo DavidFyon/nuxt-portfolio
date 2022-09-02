@@ -21,7 +21,7 @@ export default {
 		const map = new mapboxgl.Map({
 			container: 'mapContainer',
 			style: 'mapbox://styles/davidfyon/ckko82a9e6g2y17o6f2ygq4cb',
-			center: [4.718, 45.659],
+			center: [4.6497, 45.6795],
 			zoom: 10,
 			attributionControl: false
 			// maxBounds: [[4.737738, 45.673449], [4.737738, 45.673449]]
@@ -35,7 +35,7 @@ export default {
 		const marker = new mapboxgl.Marker({
 			color: '#5D5DFF'
 		})
-		marker.setLngLat([4.718, 45.659])
+		marker.setLngLat([4.6497, 45.6795])
 		marker.addTo(map)
 	}
 }
