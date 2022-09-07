@@ -31,16 +31,6 @@
 		top: 8.5rem;
 		margin-left: 10rem;
 	}
-  @media not all and (min-resolution:.001dpcm) {
-    @supports (-webkit-appearance:none) {
-      .left {
-        margin-left: -5rem;
-      }
-      .right {
-        margin-left: 5rem;
-      }
-    }
-  }
 	.bubble {
 		background: linear-gradient(-45deg, #B5B5FF, #5D5DFF, #a5a5a5, #797878);
 		background-size: 400% 400%;
