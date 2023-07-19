@@ -152,31 +152,35 @@
 							{{ $t(`projects.${project.slug}.project`) }}
 						</div>
 						<!-- FONCTIONALITIES -->
-						<div
-							class="mt-6 mr-0 text-xl font-bold text-indigo-600 md:mr-10"
-						>
-							{{ $t('portfolio.projects.functionnalities') }}
-						</div>
-						<div class="mt-3 mr-0 md:mr-10">
-							<ul>
-                <li v-for="(functionnality, index) in $t(`projects.${project.slug}.functionnalities`)" :key="index">
-                  - {{ functionnality }}
-                </li>
-              </ul>
-						</div>
+            <div v-if="$t(`projects.${project.slug}.functionnalities`).length">
+              <div
+                class="mt-6 mr-0 text-xl font-bold text-indigo-600 md:mr-10"
+              >
+                {{ $t('portfolio.projects.functionnalities') }}
+              </div>
+              <div class="mt-3 mr-0 md:mr-10">
+                <ul>
+                  <li v-for="(functionnality, index) in $t(`projects.${project.slug}.functionnalities`)" :key="index">
+                    - {{ functionnality }}
+                  </li>
+                </ul>
+              </div>
+            </div>
 						<!-- TECHNICAL -->
-						<div
-							class="mt-6 mr-0 text-xl font-bold text-indigo-600 md:mr-10"
-						>
-							{{ $t('portfolio.projects.specifications') }}
-						</div>
-						<div class="mt-3 mr-0 md:mr-10">
-							<ul>
-                <li v-for="(specification, index) in $t(`projects.${project.slug}.specifications`)" :key="index">
-                  - {{ specification }}
-                </li>
-              </ul>
-						</div>
+            <div v-if="$t(`projects.${project.slug}.specifications`).length">
+              <div
+                class="mt-6 mr-0 text-xl font-bold text-indigo-600 md:mr-10"
+              >
+                {{ $t('portfolio.projects.specifications') }}
+              </div>
+              <div class="mt-3 mr-0 md:mr-10">
+                <ul>
+                  <li v-for="(specification, index) in $t(`projects.${project.slug}.specifications`)" :key="index">
+                    - {{ specification }}
+                  </li>
+                </ul>
+              </div>
+            </div>
 						<!-- LINKS -->
             <div class="flex items-center justify-center w-full mt-8 md:justify-start">
               <nuxt-link to="/portfolio">
@@ -197,8 +201,17 @@
 					</div>
 				</div>
 				<div class="w-full mt-10 md:w-2/3">
-					<PortfolioVideo
-            v-if="$t(`projects.${project.slug}.video`)"
+					<div
+            v-if="$t(`projects.${project.slug}.video`) && !$t(`projects.${project.slug}.videoVertical`)"
+            class="w-3/4 md:w-2/4 mx-auto"
+          >
+            <PortfolioVideo
+              bgcolor="bg-gray-100"
+              :src="$t(`projects.${project.slug}.video`)"
+            />
+          </div>
+          <PortfolioVideo
+            v-if="$t(`projects.${project.slug}.video`) && $t(`projects.${project.slug}.videoVertical`)"
             bgcolor="bg-gray-100"
             :src="$t(`projects.${project.slug}.video`)"
           />

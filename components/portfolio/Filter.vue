@@ -24,7 +24,8 @@ export default {
         "ALL",
         "WEB",
         "APP",
-        "PRINT"
+        "PRINT",
+        "MOTION"
       ]
     }
   }

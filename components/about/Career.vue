@@ -7,6 +7,18 @@
 			<div class="flex flex-wrap">
 				<div class="w-full pr-0 lg:w-2/3 lg:pr-16">
 					<AboutJobItem
+						company="CNAM"
+						:jobskills="[$t('about.career.jobs.front'), $t('about.career.jobs.designer')]"
+						date="2022 - 2023"
+						:description="$t('about.career.jobs.description.cnam')"
+					/>
+          <AboutJobItem
+						company="ATS Studio"
+						:jobskills="[$t('about.career.jobs.front'), $t('about.career.jobs.designer')]"
+						date="2022"
+						:description="$t('about.career.jobs.description.ats')"
+					/>
+          <AboutJobItem
 						company="NGTV Expérience"
 						:jobskills="[$t('about.career.jobs.front'), $t('about.career.jobs.designer')]"
 						date="2021-2022"
@@ -23,12 +35,6 @@
 						:jobskills="[$t('about.career.jobs.front'), $t('about.career.jobs.designer')]"
 						date="2018-2019"
 						:description="$t('about.career.jobs.description.apollo')"
-					/>
-					<AboutJobItem
-						company="Wizaplace"
-						:jobskills="[$t('about.career.jobs.front'), $t('about.career.jobs.designer')]"
-						date="2017-2018"
-						:description="$t('about.career.jobs.description.wizaplace')"
 					/>
 					<div class="flex justify-end">
 						<button
@@ -53,6 +59,13 @@
 							</svg>
 						</button>
 					</div>
+          <AboutJobItem
+            v-if="showMoreJobs"
+						company="Wizaplace"
+						:jobskills="[$t('about.career.jobs.front'), $t('about.career.jobs.designer')]"
+						date="2017-2018"
+						:description="$t('about.career.jobs.description.wizaplace')"
+					/>
           <AboutJobItem
             v-if="showMoreJobs"
 						company="Econocom"
@@ -80,13 +93,6 @@
 						:jobskills="[$t('about.career.jobs.graphist'), $t('about.career.jobs.webdesigner')]"
 						date="2008-2010"
 						:description="$t('about.career.jobs.description.fx')"
-					/>
-					<AboutJobItem
-						v-if="showMoreJobs"
-						company="CCI de la Haute-Savoie"
-						:jobskills="[$t('about.career.jobs.communication')]"
-						date="2006-2008"
-						:description="$t('about.career.jobs.description.cci')"
 					/>
 					<div class="flex justify-end">
 						<button

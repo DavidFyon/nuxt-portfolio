@@ -66,6 +66,8 @@
         "graphist": "Graphiste",
         "communication": "Chargé de communication",
         "description": {
+          "cnam": "Conception et développement d'un design system.",
+          "ats": "Conception et développement d'un CRM et création d'un motion design.",
           "ngtv": "Conception et développement d’interfaces tactiles et d’une console utilisateur dans le domaine du sport, gestion du site internet.",
           "wattsense": "Conception et développement d’une console utilisateur, gestion du site internet, communication digitale et print.",
           "apollo": "Conception et réalisation d’un navigateur internet et d’un assistant de recherche.",
@@ -73,8 +75,7 @@
           "econocom": "Conception et développement d’applications métier.",
           "interlude": "Conception de sites internet dynamiques, application mobiles, animations, identités visuelles et supports de communication pour des établissements du domaine de la santé.",
           "zannier": "Conception de sites internet et vidéos pour des marques de vêtements (Chipie, IKKS, Levi’s, Z...).",
-          "fx": "Conception et réalisation de supports print et web (identités visuelles, plaquettes, sites internet...).",
-          "cci": "Mise en place de site web, conception on/off-line, audit web..."
+          "fx": "Conception et réalisation de supports print et web (identités visuelles, plaquettes, sites internet...)."
         },
         "more": "Voir plus",
         "less": "Voir moins"

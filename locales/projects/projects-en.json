@@ -1,4 +1,29 @@
 {
+  "ats-motion": {
+    "description": "Sound creators",
+    "project": "Design of an animate onboarding for a mobile application.",
+    "functionnalities": [],
+    "specifications": [
+      "Figma",
+      "After Effects"
+    ],
+    "url": "",
+    "visuals": [
+      {
+        "src": "1.jpg",
+        "alt": "Part 1"
+      },
+      {
+        "src": "2.jpg",
+        "alt": "Part 2"
+      },
+      {
+        "src": "3",
+        "alt": "Part 3"
+      }
+    ],
+    "video": "ats"
+  },
   "ngtv-web": {
     "description": "Empower Sport Experience",
     "project": "Design and development of a showcase site in the field of sports.",

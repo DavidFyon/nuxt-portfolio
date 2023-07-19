@@ -4,6 +4,16 @@ export const state = () => ({
   projects: [
     {
       id: uuidv4(),
+      title: "ATS Studios",
+      slug: "ats-motion",
+      logo: "ats.svg",
+      image: "1.jpg",
+      types: ["ALL", "MOTION"],
+      tags: ["ALL", "UI"],
+      date: "2022",
+    },
+    {
+      id: uuidv4(),
       title: "NGTV Expérience",
       slug: "ngtv-app",
       logo: "ngtv.svg",
@@ -48,7 +58,7 @@ export const state = () => ({
       slug: "wattsense-web",
       logo: "wattsense.svg",
       image: "home-illustration.jpg",
-      types: ["ALL", "WEB"],
+      types: ["ALL", "WEB", "MOTION"],
       tags: ["ALL", "UI", "UX", "DEV"],
       date: "2021",
     },

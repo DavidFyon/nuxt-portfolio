@@ -3,7 +3,12 @@
 		:class="bgcolor"
 		class="flex flex-col justify-center w-full p-4 mb-10 overflow-hidden rounded-md shadow-lg video"
 	>
-		<video autoplay loop muted :poster="require('@/assets/videos/poster.jpg')">
+		<video
+      autoplay
+      loop
+      controls
+      :poster="require('@/assets/videos/poster.jpg')"
+    >
 			<source :src="require(`@/assets/videos/${src}.webm`)" />
 			<source :src="require(`@/assets/videos/${src}.mp4`)" />
 		</video>

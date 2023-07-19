@@ -12,12 +12,12 @@
         />
 				<AboutSkillBar
           :title="$t('about.skills.ux.title')"
-          :percent="11"
+          :percent="10"
           :show="showSkill"
         />
 				<AboutSkillBar
 					:title="$t('about.skills.dev.title')"
-					:percent="10"
+					:percent="11"
 					:show="showSkill"
 				/>
 				<AboutSkillBar
