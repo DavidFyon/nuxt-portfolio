@@ -9240,7 +9240,7 @@ webpack-bundle-analyzer@^4.9.0:
     sirv "^1.0.7"
     ws "^7.3.1"
 
-webpack-dev-middleware@5.0.0, webpack-dev-middleware@^5.0.0:
+webpack-dev-middleware@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/webpack-dev-middleware/-/webpack-dev-middleware-5.0.0.tgz#0abe825275720e0a339978aea5f0b03b140c1584"
   integrity sha512-9zng2Z60pm6A98YoRcA0wSxw1EYn7B7y5owX/Tckyt9KGyULTkLtiavjaXlWqOMkM0YtqGgL3PvMOFgyFLq8vw==

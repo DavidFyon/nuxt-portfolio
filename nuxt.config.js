@@ -87,15 +87,15 @@ export default {
   },
 
   generate: {
-    routes () {
-      const projects = require("./store/index.js").state().projects
+    routes() {
+      const projects = require("./store/index.js").state().projects;
       return projects.map((project) => {
         return {
           route: `/portfolio/${project.slug}`,
           payload: project,
-        }
-      })
-    }
+        };
+      });
+    },
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
