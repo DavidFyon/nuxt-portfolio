@@ -60,6 +60,7 @@
 								{ title: 'VueJS', img: 'vuejs' },
 								{ title: 'Tailwind', img: 'tailwind' },
 								{ title: 'Vuetify', img: 'vuetify' },
+                { title: 'UnoCSS', img: 'unocss' },
                 { title: 'Sass', img: 'sass' }
 							]"
 						/>
