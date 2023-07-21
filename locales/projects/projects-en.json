@@ -1,4 +1,92 @@
 {
+  "cnam-app": {
+    "description": "Agir ensemble, protéger chacun",
+    "project": "Conception et développement d'un design system pour l'assurance maladie.",
+    "functionnalities": [
+      "Composants réutilisables",
+      "Customisation par services",
+      "Responsive design",
+      "Accessibilité"
+    ],
+    "specifications": [
+      "VueJS / Vuetify / SASS",
+      "Tests JEST",
+      "Nuxt pour la documentation",
+      "Figma"
+    ],
+    "url": "https://digital-design-system.netlify.app/",
+    "visuals": [
+      {
+        "src": "composants.jpg",
+        "alt": "Composants"
+      },
+      {
+        "src": "couleurs.jpg",
+        "alt": "Couleurs"
+      },
+      {
+        "src": "search.jpg",
+        "alt": "Rechercher"
+      },
+      {
+        "src": "header.jpg",
+        "alt": "Header"
+      },
+      {
+        "src": "header2.jpg",
+        "alt": "Header"
+      },
+      {
+        "src": "logo.jpg",
+        "alt": "Logo"
+      },
+      {
+        "src": "backtotop.jpg",
+        "alt": "BackToTop"
+      },
+      {
+        "src": "table.jpg",
+        "alt": "Table"
+      },
+      {
+        "src": "rating.jpg",
+        "alt": "RatingPicker"
+      },
+      {
+        "src": "notfound.jpg",
+        "alt": "NotFoundPage"
+      },
+      {
+        "src": "registercomponents.jpg",
+        "alt": "RegisterComponents"
+      },
+      {
+        "src": "compte-entreprise.jpg",
+        "alt": "Compte Entreprise"
+      },
+      {
+        "src": "pimco.jpg",
+        "alt": "PIMCO"
+      },
+      {
+        "src": "pimco2.jpg",
+        "alt": "PIMCO"
+      },
+      {
+        "src": "dossiers.jpg",
+        "alt": "Dossiers"
+      },
+      {
+        "src": "documents.jpg",
+        "alt": "Documents"
+      },
+      {
+        "src": "etudiants.jpg",
+        "alt": "Etudiants"
+      }
+    ],
+    "video": ""
+  },
   "ats-motion": {
     "description": "Sound creators",
     "project": "Design of an animate onboarding for a mobile application.",
@@ -23,6 +111,38 @@
       }
     ],
     "video": "ats"
+  },
+  "ats-app": {
+    "description": "Créateurs de son",
+    "project": "Conception et développpement d'un CRM et d'un site à destination des partenaires",
+    "functionnalities": [
+      "Composants réutilisables"
+    ],
+    "specifications": [
+      "Figma",
+      "Angular / Boostrap",
+      "API REST"
+    ],
+    "url": "",
+    "visuals": [
+      {
+        "src": "pec.jpg",
+        "alt": "Prises en charge"
+      },
+      {
+        "src": "actions.jpg",
+        "alt": "Actions"
+      },
+      {
+        "src": "actions2.jpg",
+        "alt": "Actions"
+      },
+      {
+        "src": "factures.jpg",
+        "alt": "Factures"
+      }
+    ],
+    "video": ""
   },
   "ngtv-web": {
     "description": "Empower Sport Experience",

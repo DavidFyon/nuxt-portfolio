@@ -4,12 +4,32 @@ export const state = () => ({
   projects: [
     {
       id: uuidv4(),
+      title: "CNAM",
+      slug: "cnam-app",
+      logo: "cnam.svg",
+      image: "cover.jpg",
+      types: ["ALL", "APP"],
+      tags: ["ALL", "UI", "UX", "DEV"],
+      date: "2022-2023",
+    },
+    {
+      id: uuidv4(),
       title: "ATS Studios",
       slug: "ats-motion",
       logo: "ats.svg",
       image: "1.jpg",
       types: ["ALL", "MOTION"],
       tags: ["ALL", "UI"],
+      date: "2022",
+    },
+    {
+      id: uuidv4(),
+      title: "ATS Studios",
+      slug: "ats-app",
+      logo: "ats.svg",
+      image: "commandes-infos.jpg",
+      types: ["ALL", "APP"],
+      tags: ["ALL", "UI", "UX", "DEV"],
       date: "2022",
     },
     {
